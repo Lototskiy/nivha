@@ -7,6 +7,8 @@
 	z-index: 2;
 	animation: header-opacity 1s;
 	animation-fill-mode: forwards !important;
+	padding: 2.4rem 0;
+	border-bottom: 1px solid rgba(13, 13, 14, 0.08);
 
 	@media screen and (max-width:1200px) {
 		padding-top: 2rem;
@@ -72,6 +74,48 @@
 		max-width: 100.5rem;
 		width: 100%;
 	}
+
+	&__account,
+	&__basket {
+		display: flex;
+		align-items: center;
+
+		svg {
+			margin-right: 1.4rem;
+		}
+
+		&-title {
+			position: relative;
+			color: $grey;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0px;
+				bottom: -2px;
+				width: 0%;
+				height: 1px;
+				background: $primary-c;
+				opacity: 0;
+				transition: opacity .5s, width .5s;
+			}
+		}
+
+		&:hover {
+
+			.header__account-title,
+			.header__basket-title {
+				&::before {
+					width: 100%;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&__account {}
+
+	&__basket {}
 
 	// &__logo {}
 
