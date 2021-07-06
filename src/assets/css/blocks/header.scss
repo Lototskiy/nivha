@@ -17,10 +17,10 @@
 	&--fixed {
 		position: fixed;
 		opacity: 1;
-		width: 100%;
+		width: calc(100% - 33.5rem);
+		background: #F6F6F6;
 		top: 0px;
-		left: 0px;
-		background: #ffffff;
+		right: 0;
 		box-shadow: 0px 1px 36px 13px rgba(21, 21, 21, 0.03);
 		overflow: hidden;
 		transform: translate(0, -100%);
@@ -29,13 +29,11 @@
 		z-index: 98;
 		display: flex;
 		align-items: center;
-		color: $primary-c;
-
-		.header__logo {
-			img {
-				max-height: 45px;
-			}
-		}
+		// .header__logo {
+		// 	img {
+		// 		max-height: 45px;
+		// 	}
+		// }
 	}
 
 	&--height0 {

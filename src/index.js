@@ -18,6 +18,14 @@ import './assets/css/blocks/travel-cards.scss';
 
 
 import './assets/css/blocks/pack.scss';
+import './assets/css/blocks/content.scss';
+
+// INDEX
+import './assets/css/blocks/main-screen.scss';
+import './assets/css/blocks/travel-packs.scss';
+import './assets/css/blocks/about.scss';
+import './assets/css/blocks/certification.scss';
+import './assets/css/blocks/business.scss';
 
 
 

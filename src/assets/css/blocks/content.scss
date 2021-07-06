@@ -1,0 +1,10 @@
+.content {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 24/16*1;
+    color: $primary-c;
+
+    &__weight {
+        font-weight: bold;
+    }
+}
