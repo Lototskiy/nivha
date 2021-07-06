@@ -12,6 +12,7 @@ import './assets/css/blocks/inputs.scss';
 import './assets/css/blocks/aside.scss';
 import './assets/css/blocks/footer.scss';
 import './assets/css/blocks/main-screen.scss';
+import './assets/css/blocks/pack.scss';
 
 
 
