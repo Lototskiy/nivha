@@ -1,1 +1,7 @@
 //- include main-screen.pug
+
+mixin breadcrumb(...items)
+  .breadcrumb__list
+    each item in items
+      li.breadcrumb__item
+        a(href="#").breadcrumb__link= item

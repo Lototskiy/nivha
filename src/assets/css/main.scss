@@ -59,7 +59,7 @@ body {
 	font-weight: 500;
 	font-size: 1.6rem;
 	background: #F6F6F6;
-	user-select: none;
+	// user-select: none;
 
 }
 
@@ -102,5 +102,7 @@ h4 {
 
 
 .simple-title {
-	@media screen and (max-width:$large_tablet) {}
+	@media screen and (max-width:$large_tablet) {
+		font-weight: 800;
+	}
 }
