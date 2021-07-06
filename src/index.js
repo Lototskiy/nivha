@@ -12,10 +12,14 @@ import './assets/css/blocks/inputs.scss';
 import './assets/css/blocks/aside.scss';
 import './assets/css/blocks/footer.scss';
 import './assets/css/blocks/main-screen.scss';
+<<<<<<< HEAD
 import './assets/css/blocks/main-catalog.scss';
 import './assets/css/blocks/breadcrumb.scss';
 
 
+=======
+import './assets/css/blocks/pack.scss';
+>>>>>>> master
 
 
 
