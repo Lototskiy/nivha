@@ -22,19 +22,20 @@
             h3.block-travel__title
                 |Travel
             .cards
-                .cards__item
-                    .cards__item-left
-                        .img-wrap 
-                            div 
-                                img(src="assets/images/png/cards-img-1.png", alt="cards image")
-                        .cards__item-info
-                            .cards__title
-                                |Pre-Departure Fit to Fly only
-                            .cards__sub-title 
-                                |Swab • 1 day
-                    .cards__item-right
-                        .price 
-                            |£<span>65</span>
-                        a(href="#").btn
-                            |Book test 
-                
+                +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Pre-Departure Fit to Fly only', subTitle: 'Swab • 1 day', price: '65'})
+                +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Day 5 test to Release', subTitle: 'Deoxygenated blood • 1 day', price: '65'})
+                +travelCards({class: '', src: 'assets/images/png/cards-img-2.png', title: 'Express PCR test', subTitle: 'Deoxygenated blood • 3 hours • Nothern Ireland only', price: '165'})
+        .block-travel
+            h3.block-travel__title
+                |Travel Packs
+            .cards
+                +travelCards({class: 'green', src: 'assets/images/png/cards-img-3.png', title: 'Green Travel Pack', subTitle: 'Pre-Derarture + Day 2 tests', price: '65'})
+                +travelCards({class: 'orang', src: 'assets/images/png/cards-img-4.png', title: 'Amber Travel Pack', subTitle: 'Pre-Derarture + Day 2 & Day 8 tests', price: '65'})
+        .block-travel
+            h3.block-travel__title
+                |Private
+            .cards
+                +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Private PCR', subTitle: 'Swab • 1 day', price: '65'})
+                +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Private Antigen', subTitle: 'Deoxygenated blood • 1 day', price: '35'})
+                +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Private Antibody (by appointment)', subTitle: 'Deoxygenated blood • 1 day', price: '45'})
+        

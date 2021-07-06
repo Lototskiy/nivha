@@ -7,7 +7,36 @@
         align-items: center;
         justify-content: space-between;
         padding: 3.1rem 4rem ;
-        // height: 140px;
+        margin-bottom: 2.4rem;
+
+        &:last-child {
+            margin-bottom: 0rem;
+        }
+
+        &.green {
+            background: #046C1C;
+            color: #fff;
+            .cards__sub-title {
+                color: #ffffff;
+            }
+            .img-wrap {
+                div {
+                    filter: none;
+                }
+            }
+        }
+        &.orang {
+            background: #C65300;
+            color: #fff;
+            .cards__sub-title {
+                color: #ffffff;
+            }
+            .img-wrap {
+                div {
+                    filter: none;
+                }
+            } 
+        }
 
         &-left {
             display: flex;
@@ -34,6 +63,18 @@
                 font-size: 2.4rem;
                 line-height: 140%;
                 margin-right: 3.2rem;
+            }
+
+            .btn {
+                transition: all 0.5s;
+                 
+                &:hover {
+                    opacity: 0.7;
+                }   
+                svg {
+                    fill: #001602;
+                    margin-left: 1.2rem;
+                }
             }
         }
 
