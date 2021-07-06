@@ -6,6 +6,43 @@
     border-radius: 1.6rem;
     overflow: hidden;
 
+    &--green {
+        background: $green;
+        color: #fff;
+
+        .pack__content-price {
+            color: #fff;
+        }
+
+        .btn--empty {
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #fff;
+        }
+
+        .btn--yellow {
+            color: $primary-c;
+        }
+
+    }
+
+    &--orange {
+        background: $orange;
+        color: #fff;
+
+        .pack__content-price {
+            color: #fff;
+        }
+
+        .btn--empty {
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #fff;
+        }
+
+        .btn--yellow {
+            color: $primary-c;
+        }
+    }
+
     &__content {
         padding: 3.2rem;
         display: flex;
@@ -30,6 +67,8 @@
 
         &-list {
             margin-bottom: 2.4rem;
+            list-style: initial;
+            padding-left: 3rem;
         }
 
         &-item {

@@ -73,7 +73,7 @@ main {
 
 }
 
-.content {
+.main {
 	width: calc(100% - 33.5rem);
 	position: relative;
 	padding-top: 10.4rem;
@@ -104,5 +104,9 @@ h4 {
 
 
 .simple-title {
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 140%;
+
 	@media screen and (max-width:$large_tablet) {}
 }

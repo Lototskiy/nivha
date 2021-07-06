@@ -1,1 +1,26 @@
-.travel-packs {}
+.travel-packs {
+    padding-top: 3.5rem;
+    padding-bottom: 7rem;
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: $grey;
+        margin-bottom: 3.2rem;
+    }
+
+    &__pack {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .pack {
+            width: calc((100% - 2.4rem * 1) / 2);
+        }
+    }
+}
