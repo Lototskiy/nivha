@@ -1,0 +1,36 @@
+.breadcrumb {
+    &__list {
+        display: inline-flex;
+    }
+    &__item {
+        list-style-type: none;
+    }
+    &__link {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        transition: all 0.5s;
+        color: #1C5C6C;
+        position: relative;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:after {
+            content: '/';
+            margin: 0rem 0.8rem;
+            color: #8E8E8F;
+        }
+    }
+
+    &__item:last-child {
+        .breadcrumb__link {
+            color: #8E8E8F;
+            pointer-events: none;
+        }
+        .breadcrumb__link:after {
+            content: none;
+        }
+    }
+
+}
