@@ -1,0 +1,27 @@
+.confidence {
+    padding-top: 4.5rem;
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        margin-bottom: 5rem;
+
+        .content {
+            font-size: 1.8rem;
+            color: $grey;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0 -1rem;
+    }
+
+    &__item {
+        padding: 0 1rem;
+    }
+}
