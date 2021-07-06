@@ -1,0 +1,43 @@
+.socials {
+    &__list {
+        display: inline-flex;
+    }
+
+    &__item {
+        margin-right: 2.4rem;
+    }
+
+    &__item:last-child {
+        margin-right: 0rem;
+    }
+
+    &__link {
+        transition: all 0.5s;
+        display: block;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        svg path {
+            transition: all 0.5s;
+        }
+
+        &.facebook:hover {
+            svg path {
+                fill: #3b5998;
+            }
+        }
+        &.twitter:hover {
+            svg path {
+                fill: #00acee;
+            }
+        }
+        &.linkedin:hover {
+            svg path {
+                fill: #0e76a8;
+            }
+        }
+       
+    }
+}

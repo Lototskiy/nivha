@@ -15,6 +15,8 @@ import './assets/css/blocks/main-screen.scss';
 import './assets/css/blocks/main-catalog.scss';
 import './assets/css/blocks/breadcrumb.scss';
 import './assets/css/blocks/travel-cards.scss';
+import './assets/css/blocks/socials.scss';
+
 
 
 import './assets/css/blocks/pack.scss';
