@@ -1,0 +1,138 @@
+.header {
+	padding-top: 4rem;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	opacity: 0;
+	z-index: 2;
+	animation: header-opacity 1s;
+	animation-fill-mode: forwards !important;
+
+	@media screen and (max-width:1200px) {
+		padding-top: 2rem;
+	}
+
+	&--fixed {
+		position: fixed;
+		opacity: 1;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		background: #ffffff;
+		box-shadow: 0px 1px 36px 13px rgba(21, 21, 21, 0.03);
+		overflow: hidden;
+		transform: translate(0, -100%);
+		animation: header-height 0.5s !important;
+		animation-fill-mode: forwards !important;
+		z-index: 98;
+		display: flex;
+		align-items: center;
+		color: $primary-c;
+
+		.header__logo {
+			img {
+				max-height: 45px;
+			}
+		}
+	}
+
+	&--height0 {
+		transform: translate(0, 0);
+		animation: header-height0 0.5s !important;
+	}
+
+
+	@keyframes header-height {
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+
+	@keyframes header-height0 {
+		100% {
+			transform: translate(0, -100%);
+		}
+	}
+
+	@keyframes header-opacity {
+		100% {
+			opacity: 1;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+
+	}
+
+	&__search {
+		max-width: 100.5rem;
+		width: 100%;
+	}
+
+	// &__logo {}
+
+	// &__nav {
+	// 	&-list {
+	// 		display: flex;
+	// 		align-items: center;
+	// 	}
+
+	// 	&-item {
+	// 		margin-right: 2.5rem;
+
+	// 		&:last-child {
+	// 			margin-right: 0px;
+	// 		}
+	// 	}
+
+	// 	&-link {
+	// 		position: relative;
+
+	// 		&::before {
+	// 			content: "";
+	// 			position: absolute;
+	// 			left: 0px;
+	// 			bottom: -2px;
+	// 			width: 100%;
+	// 			height: 1px;
+	// 			background: $primary-c;
+	// 			transform: scaleX(0);
+	// 			transition: transform .5s;
+	// 		}
+
+	// 		&:hover::before {
+	// 			transform: scaleX(1);
+	// 		}
+	// 	}
+	// }
+
+	// &__phone {}
+
+	// &__burger {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: flex-start;
+	// 	width: 23px;
+	// 	padding: 5px;
+	// 	cursor: pointer;
+
+	// 	&:hover div {
+	// 		border-bottom-color: $secondary-c;
+	// 	}
+
+	// 	div {
+	// 		margin-bottom: 2px;
+	// 		width: 100%;
+	// 		border-bottom: 2px solid $primary-c;
+	// 		transition: border-bottom-color .5s;
+
+	// 		&:last-child {
+	// 			margin-bottom: 0px;
+	// 		}
+	// 	}
+	// }
+}

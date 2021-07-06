@@ -1,0 +1,32 @@
+include ../mixins/mixins-loader
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(charset='utf-8')
+    title #{title}
+    meta(name='theme-color' content='#3D4356')
+    block link
+      //- link(rel='icon' type='image/png' href='assets/images/favicon.png')
+      link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' rel='stylesheet')
+      link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css')
+
+
+
+
+
+
+  body(id=pageClass)
+    .body__wrapper
+      include ../includes/aside
+      section.content
+        include ../includes/header
+        block content
+        include ../includes/footer
+        include ../includes/mobile-menu
+        include ../includes/popup
+    block script
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js')

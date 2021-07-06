@@ -1,0 +1,22 @@
+.btn {
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 5.6rem;
+	display: inline-flex;
+	align-items: center;
+	white-space: nowrap;
+	// text-align: center;
+	background: #2A8BA3;
+	border-radius: 1.2rem;
+	font-weight: 600;
+	padding: 0 3.5rem;
+	transition: all 0.5s;
+	color: #fff;
+
+	svg {
+		width: 1.6rem;
+		fill: #fff;
+		margin-right: 1rem;
+	}
+}
