@@ -12,6 +12,9 @@
         top: 0;
         left: 0;
         padding: 4rem 5rem;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid rgba(13, 13, 14, 0.08);
 
     }
 
@@ -22,6 +25,13 @@
         flex-direction: column;
         align-items: flex-end;
         margin: 0 auto 4rem;
+
+        &-text {
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: $secondary-c;
+            font-family: $secondary-f;
+        }
     }
 
     &__reception {
@@ -66,5 +76,64 @@
                 }
             }
         }
+    }
+
+    &__tel {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.7rem;
+        padding-top: 2.7rem;
+        border-top: 1px solid rgba(13, 13, 14, 0.08);
+        padding-left: 1.9rem;
+
+        svg {
+            fill: $primary-c;
+            width: 1.9rem;
+            margin-right: 1.6rem;
+        }
+
+        &-title {
+            color: $primary-c;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: -2px;
+                width: 0%;
+                height: 1px;
+                background: $primary-c;
+                opacity: 0;
+                transition: opacity .5s, width .5s;
+            }
+        }
+
+        &:hover {
+            .aside__tel-title {
+                &::before {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__location {
+        .btn {
+            background: rgba(13, 13, 14, 0.08);
+            padding: 0 5rem 0 2rem;
+
+            svg {
+                margin-right: 2rem;
+                width: 1.8rem;
+            }
+
+            &__title {
+                color: $primary-c;
+            }
+        }
+
     }
 }
