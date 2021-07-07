@@ -28,6 +28,7 @@ import './assets/css/blocks/travel-packs.scss';
 import './assets/css/blocks/about.scss';
 import './assets/css/blocks/certification.scss';
 import './assets/css/blocks/business.scss';
+import './assets/css/blocks/contact.scss';
 import './assets/css/blocks/confidence.scss';
 
 
