@@ -16,7 +16,7 @@ import './assets/css/blocks/main-catalog.scss';
 import './assets/css/blocks/breadcrumb.scss';
 import './assets/css/blocks/travel-cards.scss';
 import './assets/css/blocks/socials.scss';
-import './assets/css/blocks/toogles2.scss';
+import './assets/css/blocks/toogles.scss';
 
 
 
@@ -37,10 +37,10 @@ import './assets/css/blocks/faq.scss';
 
 // JS
 
-import './assets/js/toogles2';
+import './assets/js/toogles';
 import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/inputs-mask';
 import './assets/js/header';
 // import './assets/js/mobile-menu';
-// import './assets/js/anchors';
+// import './assets/js/anchors';    
