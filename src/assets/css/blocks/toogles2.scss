@@ -1,0 +1,13 @@
+.toogles2 {
+    &__item {
+        &--active {
+            .toogles2__item-box {
+                display: block;
+            }
+        }
+
+        &-box {
+            display: none;
+        }
+    }
+}

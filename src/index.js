@@ -16,6 +16,7 @@ import './assets/css/blocks/main-catalog.scss';
 import './assets/css/blocks/breadcrumb.scss';
 import './assets/css/blocks/travel-cards.scss';
 import './assets/css/blocks/socials.scss';
+import './assets/css/blocks/toogles2.scss';
 
 
 
@@ -30,11 +31,13 @@ import './assets/css/blocks/certification.scss';
 import './assets/css/blocks/business.scss';
 import './assets/css/blocks/contact.scss';
 import './assets/css/blocks/confidence.scss';
+import './assets/css/blocks/faq.scss';
 
 
 
 // JS
 
+import './assets/js/toogles2';
 import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/inputs-mask';
