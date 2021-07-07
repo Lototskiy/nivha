@@ -42,19 +42,12 @@ import './assets/css/blocks/faq.scss';
 
 
 // JS
-<<<<<<< Updated upstream
 
 import './assets/js/toogles';
-=======
 import './assets/js/tabs';
->>>>>>> Stashed changes
 import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/inputs-mask';
 import './assets/js/header';
 // import './assets/js/mobile-menu';
-<<<<<<< Updated upstream
-// import './assets/js/anchors';    
-=======
-import './assets/js/anchors';
->>>>>>> Stashed changes
+// import './assets/js/anchors';
