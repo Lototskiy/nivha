@@ -17,12 +17,11 @@
         .btn--empty {
             border: 1px solid rgba(255, 255, 255, 0.16);
             color: #fff;
-        }
 
-        .btn--yellow {
-            color: $primary-c;
+            &:hover {
+                border: 1px solid rgba(255, 255, 255, 0);
+            }
         }
-
     }
 
     &--orange {
@@ -36,10 +35,6 @@
         .btn--empty {
             border: 1px solid rgba(255, 255, 255, 0.16);
             color: #fff;
-        }
-
-        .btn--yellow {
-            color: $primary-c;
         }
     }
 
@@ -84,13 +79,6 @@
 
             .btn {
                 padding: 0 2.4rem;
-
-                svg {
-                    width: 0.9rem;
-                    fill: $primary-c;
-                    margin-right: 0;
-                    margin-left: 1.5rem;
-                }
 
                 &+.btn {
                     margin-left: 1.6rem;
