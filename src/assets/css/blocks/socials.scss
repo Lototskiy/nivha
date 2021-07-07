@@ -19,25 +19,39 @@
             transform: scale(1.05);
         }
 
-        svg path {
-            transition: all 0.5s;
+        svg {
+
+            path {
+                transition: all 0.5s;
+            }
+            
         }
 
         &.facebook:hover {
-            svg path {
-                fill: #3b5998;
+            svg {
+
+                path {
+                    fill: #3b5998;
+                }
+                
             }
         }
         &.twitter:hover {
-            svg path {
-                fill: #00acee;
+            svg {
+
+                path {
+                    fill: #00acee;
+                }
+                
             }
         }
         &.linkedin:hover {
-            svg path {
-                fill: #0e76a8;
+            svg {
+
+                path {
+                    fill: #0e76a8;
+                } 
             }
         }
-       
     }
 }

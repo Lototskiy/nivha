@@ -1,0 +1,47 @@
+// bg-steps-number.svg
+.steps {
+    max-width: 1028px;
+    margin-bottom: 5.7rem;
+    &__list {
+        width: 100%;
+        display: inline-flex;
+        background: rgba(13, 13, 14, 0.04);
+        border-radius: 16px;
+    }
+    &__item {
+        position: relative;
+        width: 25%;
+        padding: 6.4rem 2.4rem 2.4rem 2.4rem;
+        border-right: 1px solid #DADADA;
+        &:last-child {
+            border-right: none;
+        }
+        p {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 150%;
+        }
+    }
+    &__number {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        width: 4rem;
+        height: 4rem;
+        color: #FFFFFF;
+        background-image: url('~img/svg/bg-steps-number.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-bottom: 0.8rem;
+    }
+}

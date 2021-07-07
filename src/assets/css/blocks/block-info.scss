@@ -1,0 +1,22 @@
+.block-info {
+    display: flex;
+    .img-wrap {
+        margin-right: 3.4rem;
+        flex-shrink: 0;
+    }
+    .content {
+        padding-top: 2rem;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: #000000;
+        max-width: 512px;
+
+        p {
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__list {
+        list-style: disc;
+        padding-left: 2.5rem;
+    }
+}
