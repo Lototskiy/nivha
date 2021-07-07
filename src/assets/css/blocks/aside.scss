@@ -36,6 +36,12 @@
 
     &__reception {
         margin-bottom: 3.2rem;
+
+        .btn {
+            padding: 0 1rem;
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     &__nav {
@@ -130,7 +136,8 @@
     &__location {
         .btn {
             background: rgba(13, 13, 14, 0.08);
-            padding: 0 5rem 0 2rem;
+            padding: 0 2rem 0 2rem;
+            width: 100%;
 
             svg {
                 margin-right: 2rem;
