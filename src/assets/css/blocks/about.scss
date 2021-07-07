@@ -8,10 +8,12 @@
 
     &__text {
         margin-bottom: 3rem;
-        font-weight: normal;
-        font-size: 1.8rem;
-        line-height: 150%;
-        color: $grey;
+
+        .content {
+            font-size: 1.8rem;
+            color: $grey;
+        }
+
     }
 
     &__list {
