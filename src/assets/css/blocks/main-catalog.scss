@@ -4,7 +4,7 @@
 
     .content {
         padding-top: 0rem;
-        
+
     }
 
     .block-travel {
@@ -16,11 +16,12 @@
             line-height: 140%;
             margin-bottom: 2.4rem;
         }
+
         &:last-child {
             margin-bottom: 0rem;
         }
     }
-    
+
     .simple-title {
         font-size: 5.6rem;
 
@@ -42,13 +43,14 @@
 
     .anchor {
         margin-bottom: 5.6rem;
+
         &__list {
             display: inline-flex;
 
         }
-        &__item {
-            
-        }
+
+        &__item {}
+
         &__link {
             display: block;
             border-top: 1px solid rgba(13, 13, 14, 0.16);
@@ -60,16 +62,19 @@
             font-weight: 500;
             font-size: 2rem;
             transition: all 0.5s;
+
             &:hover {
                 color: rgba(#0D0D0E, 0.7);
             }
         }
+
         &__item:first-child {
             .anchor__link {
                 border-left: 1px solid rgba(13, 13, 14, 0.16);
                 border-radius: 12px 0px 0px 12px;
             }
         }
+
         &__item:last-child {
             .anchor__link {
                 border-radius: 0px 12px 12px 0px;
@@ -77,4 +82,3 @@
         }
     }
 }
-
