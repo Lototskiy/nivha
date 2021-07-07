@@ -14,20 +14,54 @@
 	font-weight: 600;
 	color: #fff;
 
+	&:hover {
+		color: $primary-c;
+		background: rgba(13, 13, 14, 0.08);
+
+		svg {
+			fill: $primary-c;
+		}
+	}
+
 	svg {
 		width: 1.6rem;
 		fill: #fff;
 		margin-right: 1rem;
+		transition: fill .5s;
 	}
 
 	&--yellow {
 		background-color: $yellow;
 		color: $primary-c;
+
+		svg {
+			width: 0.9rem;
+			fill: $primary-c;
+			margin-right: 0;
+			margin-left: 1.5rem;
+
+		}
+
+		&:hover {
+			background: #2A8BA3;
+			color: #fff;
+
+			svg {
+				fill: #fff;
+			}
+		}
 	}
 
 	&--empty {
 		background-color: inherit;
 		border: 1px solid rgba(13, 13, 14, 0.16);
 		color: #282829;
+		line-height: 5.4rem;
+
+		&:hover {
+			background: #2A8BA3;
+			color: #fff;
+			border: 1px solid rgba(13, 13, 14, 0);
+		}
 	}
 }

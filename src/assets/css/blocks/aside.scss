@@ -138,14 +138,25 @@
             background: rgba(13, 13, 14, 0.08);
             padding: 0 2rem 0 2rem;
             width: 100%;
+            color: $primary-c;
 
             svg {
                 margin-right: 2rem;
                 width: 1.8rem;
+                fill: $primary-c;
+            }
+
+            &:hover {
+                background: #2A8BA3;
+                color: #fff;
+
+                svg {
+                    fill: #fff;
+                }
             }
 
             &__title {
-                color: $primary-c;
+
                 font-weight: 500;
             }
         }

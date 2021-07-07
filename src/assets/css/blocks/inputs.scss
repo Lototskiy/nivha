@@ -52,6 +52,11 @@
                 padding: 0 3rem;
                 background: #D9D9DA;
                 font-weight: 500;
+
+                &:hover {
+                    background: #2A8BA3;
+                    color: #fff;
+                }
             }
 
             // &--textarea {

@@ -38,7 +38,16 @@
 
         &-btn {
             .btn {
-                background-color: #1C5C6C;
+                background-color: $secondary-c;
+
+                &:hover {
+                    background: rgba(13, 13, 14, 0.08);
+                    color: $primary-c;
+
+                    svg {
+                        fill: $primary-c;
+                    }
+                }
 
                 svg {
                     width: 1rem;
@@ -50,6 +59,11 @@
                     background-color: inherit;
                     color: #505154;
                     padding: 0 2.4rem;
+
+                    &:hover {
+                        background-color: $secondary-c;
+                        color: #fff;
+                    }
                 }
 
                 &+.btn {
