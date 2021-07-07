@@ -17,6 +17,12 @@ import './assets/css/blocks/breadcrumb.scss';
 import './assets/css/blocks/travel-cards.scss';
 import './assets/css/blocks/socials.scss';
 import './assets/css/blocks/toogles.scss';
+import './assets/css/blocks/main-product.scss';
+import './assets/css/blocks/block-info.scss';
+import './assets/css/blocks/test-info.scss';
+import './assets/css/blocks/steps.scss';
+import './assets/css/blocks/sidebar.scss';
+
 
 
 
@@ -36,11 +42,19 @@ import './assets/css/blocks/faq.scss';
 
 
 // JS
+<<<<<<< Updated upstream
 
 import './assets/js/toogles';
+=======
+import './assets/js/tabs';
+>>>>>>> Stashed changes
 import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/inputs-mask';
 import './assets/js/header';
 // import './assets/js/mobile-menu';
+<<<<<<< Updated upstream
 // import './assets/js/anchors';    
+=======
+import './assets/js/anchors';
+>>>>>>> Stashed changes
