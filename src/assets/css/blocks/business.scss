@@ -2,18 +2,33 @@
     padding-bottom: 5rem;
     padding-top: 5.5rem;
 
+    @media screen and (max-width:$large_tablet) {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+    }
+
     &__wrap {
         display: flex;
         background: #FFFFFF;
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
         border-radius: 1.6rem;
         overflow: hidden;
+
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+        }
     }
 
     &__content {
         padding: 3rem;
         width: calc(100% - 76.5rem - 5rem);
         margin-right: 5rem;
+
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+            margin-right: 0;
+            padding-bottom: 3.5rem;
+        }
 
         &-title {
             font-weight: bold;
@@ -26,6 +41,10 @@
             list-style: initial;
             padding-left: 2rem;
             margin-bottom: 3rem;
+
+            @media screen and (max-width:$large_tablet) {
+                padding-left: 1.5rem;
+            }
         }
 
         &-item {
@@ -39,6 +58,12 @@
         &-btn {
             .btn {
                 background-color: $secondary-c;
+
+                @media screen and (max-width:$large_tablet) {
+                    width: 100%;
+                    justify-content: center;
+                    background-color: #2A8BA3;
+                }
 
                 &:hover {
                     background: rgba(13, 13, 14, 0.08);
@@ -68,6 +93,11 @@
 
                 &+.btn {
                     margin-left: 1.6rem;
+
+                    @media screen and (max-width:$large_tablet) {
+                        margin-left: 0;
+                        margin-top: 1.6rem;
+                    }
                 }
             }
         }
@@ -77,6 +107,10 @@
         max-width: 76.5rem;
         width: 100%;
         position: relative;
+
+        @media screen and (max-width:$large_tablet) {
+            min-height: 17rem;
+        }
 
         img {
             position: absolute;

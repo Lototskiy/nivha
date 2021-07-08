@@ -2,12 +2,25 @@
     padding-bottom: 4.5rem;
     padding-top: 7rem;
 
+    @media screen and (max-width:$large_tablet) {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+    }
+
     &__title {
         margin-bottom: 1rem;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__text {
         margin-bottom: 3rem;
+
+        @media screen and (max-width:$large_tablet) {
+            display: none;
+        }
 
         .content {
             font-size: 1.8rem;
@@ -21,6 +34,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: -3rem;
+
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
     }
 
     &__item {
@@ -31,6 +49,15 @@
         border-radius: 1.6rem;
         overflow: hidden;
         transition: border-color .5s;
+
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+            margin-bottom: 2.4rem;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
 
         &:hover {
             border: 1px solid rgba(13, 13, 14, 0);
@@ -111,6 +138,7 @@
         padding: 4rem 3rem;
         display: flex;
         flex-direction: column;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
 
         &-top {
             display: flex;
@@ -135,6 +163,17 @@
             line-height: 130%;
             color: $green;
             margin-bottom: 2rem;
+
+            @media screen and (max-width:$large_tablet) {
+                font-size: 3.2rem;
+            }
+        }
+
+        &-text {
+            .content {
+                font-size: 1.8rem;
+                color: #000000;
+            }
         }
 
         &-reviews {
