@@ -6,7 +6,8 @@ mixin travelCards(items)
                 img(src=items.src, alt="cards image")
         .cards__item-info
             a(href="product.html").cards__title
-                |#{items.title}
+                span
+                    |#{items.title}
             .cards__sub-title 
                 |#{items.subTitle}
     .cards__item-right
