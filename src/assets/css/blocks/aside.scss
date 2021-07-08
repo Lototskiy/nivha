@@ -83,20 +83,24 @@
             transition: color .5s, background-color .5s;
             border-radius: $br;
 
-            svg {
-                width: 2rem;
-                fill: $grey;
+            img {
                 margin-right: 1.5rem;
-                transition: fill .5s;
             }
+
+            // svg {
+            //     width: 2rem;
+            //     fill: $grey;
+
+            //     transition: fill .5s;
+            // }
 
             &--active {
                 color: $primary-c;
                 background-color: #fff;
 
-                svg {
-                    fill: $primary-c;
-                }
+                // svg {
+                //     fill: $primary-c;
+                // }
             }
 
             &:hover {
