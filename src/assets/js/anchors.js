@@ -46,5 +46,3 @@ function scrollToElement(elementId, onload) {
         window.hideMenu();
     }
 }
-
-
