@@ -4,6 +4,10 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width:$large_tablet) {
+        display: none;
+    }
+
     &__wrap {
         height: 100vh;
         max-width: inherit;

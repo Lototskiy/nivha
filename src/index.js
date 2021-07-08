@@ -49,5 +49,5 @@ import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/inputs-mask';
 import './assets/js/header';
-// import './assets/js/mobile-menu';
+import './assets/js/mobile-menu';
 // import './assets/js/anchors';
