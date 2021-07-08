@@ -2,8 +2,17 @@
     padding-top: 3.5rem;
     padding-bottom: 5.5rem;
 
+    @media screen and (max-width:$large_tablet) {
+        padding-top: 6.4rem;
+        padding-bottom: 3.2rem;
+    }
+
     &__title {
         margin-bottom: 3.5rem;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__wrap {
@@ -11,11 +20,32 @@
         background: #FFFFFF;
         border-radius: 2.4rem;
         overflow: hidden;
+
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+        }
     }
 
     &__content {
         width: 50%;
         padding: 6rem 6rem 5rem 5rem;
+
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+            padding: 3.2rem;
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+
+            @media screen and (max-width:$large_tablet) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
 
         &-item {
             display: flex;
@@ -35,19 +65,37 @@
 
             &--address {
                 padding: 2.5rem 0;
+
+                @media screen and (max-width:$large_tablet) {
+                    align-items: flex-start;
+
+                    svg {
+                        margin-top: 1rem;
+                    }
+                }
             }
 
             &--tel {
                 align-items: flex-start;
+
+                @media screen and (max-width:$large_tablet) {
+                    padding-top: 2.5rem;
+                }
             }
 
             svg {
                 margin-right: 2.5rem;
+                flex-shrink: 0;
             }
         }
 
         &-btn {
-            margin-left: auto;
+            margin-left: 0.5rem;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-left: 0;
+                margin-top: 1.5rem;
+            }
 
             .btn {
                 padding: 0 2.4rem;
@@ -105,6 +153,11 @@
     &__map {
         width: 50%;
         position: relative;
+
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+            min-height: 30rem;
+        }
 
         iframe {
             position: absolute;
