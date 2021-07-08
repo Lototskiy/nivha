@@ -7,14 +7,33 @@
         display: inline-flex;
         background: rgba(13, 13, 14, 0.04);
         border-radius: 16px;
+
+        @media screen and (max-width:$large_tablet) {
+            display: flex;
+            flex-direction: column;
+            background: none;
+            border-radius: 0px;
+        }
     }
     &__item {
         position: relative;
         width: 25%;
         padding: 6.4rem 2.4rem 2.4rem 2.4rem;
         border-right: 1px solid #DADADA;
+
+        @media screen and (max-width:$large_tablet) {
+            width: 100%;
+            border: none;
+            border-radius: 16px;
+            background: rgba(13, 13, 14, 0.04);
+            margin-bottom: 1.6rem;
+        }
         &:last-child {
             border-right: none;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-bottom: 0rem;
+            }
         }
         p {
             font-weight: normal;

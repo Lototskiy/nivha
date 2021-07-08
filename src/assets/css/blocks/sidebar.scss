@@ -3,6 +3,12 @@
     max-width: 40.8rem;
     padding: 0rem 4.8rem;
 
+    @media screen and (max-width:$large_tablet) {
+        margin: 0rem auto;
+        max-width: 480px;
+        padding: 0 20px;
+    }
+
     &-title {
         font-weight: 500;
         font-size: 1.6rem;
@@ -16,6 +22,24 @@
         filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.08));
         padding: 3.2rem;
         margin-bottom: 3.2rem;
+
+        @media screen and (max-width:$large_tablet) {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-bottom: 0rem;
+            border-radius: 16px 16px 0px 0px;
+            display: flex;
+            align-items: center;
+            z-index: 5;
+
+            .sidebar-title {
+                display: none;
+            }
+
+            
+        }
 
         .btn {
             width: 100%;
@@ -39,6 +63,13 @@
             font-size: 4rem;
             line-height: 130%;
             margin-bottom: 2.8rem;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-bottom: 0rem;
+                margin-right: 3.2rem;
+                font-size: 2.4rem;
+                line-height: 140%;
+            }
         }
         
     }
@@ -46,6 +77,10 @@
         padding: 3.2rem;
         border-radius: 16px;
         border: 1px solid rgba(13, 13, 14, 0.16);
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 3.2rem;
+        }
     
         &-wrap {
             margin-bottom: 2.4rem;
