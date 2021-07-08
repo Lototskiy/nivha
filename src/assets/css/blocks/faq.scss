@@ -33,13 +33,13 @@
 
         &-title {
             cursor: pointer;
-            padding: 3.5rem 0;
+            padding: 3.5rem 3rem 3.5rem 0;
             position: relative;
             display: flex;
             justify-content: space-between;
 
             p {
-                padding-right: 2rem;
+
                 font-weight: bold;
                 font-size: 2rem;
                 line-height: 24/20*1;
@@ -47,20 +47,26 @@
                 transition: opacity .5s;
             }
 
-            &:hover {
-                p {
-                    opacity: 0.5;
+            &::before {
+                content: '';
+                position: absolute;
+                top: calc(50% - 0.5rem);
+                right: 0;
+                width: 1.8rem;
+                height: 1rem;
+                background-image: url("~img/svg/faq-arrow.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: transform .5s;
+
+                .toogles__item-title--active & {
+                    transform: rotateX(180deg);
                 }
             }
 
-            svg {
-                width: 2rem;
-                fill: $grey;
-                flex-shrink: 0;
-                transition: transform .5s;
-
-                .toogles__item--active & {
-                    transform: rotateX(180deg);
+            &:hover {
+                p {
+                    opacity: 0.5;
                 }
             }
         }
