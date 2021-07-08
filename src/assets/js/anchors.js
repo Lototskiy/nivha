@@ -1,14 +1,14 @@
-function checkAnchor() {
-    var elementid = window.location.hash.replace("#", "");
-    if (elementid) {
-        scrollToElement(elementid, true);
-    }
-}
+// function checkAnchor() {
+//     var elementid = window.location.hash.replace("#", "");
+//     if (elementid) {
+//         scrollToElement(elementid, true);
+//     }
+// }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    window.addLoadEvent(checkAnchor);
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     window.addLoadEvent(checkAnchor);
+// });
 
 
 
