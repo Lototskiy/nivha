@@ -51,3 +51,5 @@ import './assets/js/inputs-mask';
 import './assets/js/header';
 import './assets/js/mobile-menu';
 // import './assets/js/anchors';
+// import './assets/js/mobile-menu';
+import './assets/js/anchors';
