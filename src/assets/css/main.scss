@@ -45,7 +45,7 @@ body {
 	}
 
 	@media screen and (max-width:$large_mobile) {
-		font-size: 100vw / (380/10);
+		font-size: 100vw / (410/10);
 	}
 }
 
@@ -77,22 +77,26 @@ main {
 	width: calc(100% - 33.5rem);
 	position: relative;
 	padding-top: 10.4rem;
+
+	@media screen and (max-width:$large_tablet) {
+		width: 100%;
+		padding-top: 6.8rem;
+	}
 }
 
 .center-wrap {
-	// max-width: 1360px;
 	max-width: calc(100% - 100px);
 	width: 100%;
 	margin: 0px auto;
-	// padding: 0px 50px;
 
-	// @media screen and (max-width: $large_desktop) {
-	// 	max-width: calc(100% - 80px);
-	// }
+	@media screen and (max-width: 1500px) {
+		max-width: calc(100% - 70px);
+	}
 
-	// @media screen and (max-width:$large_tablet) {
-	// 	max-width: $large_mobile;
-	// }
+	@media screen and (max-width:$large_tablet) {
+		max-width: $large_mobile;
+		padding: 0 20px;
+	}
 }
 
 h1,
