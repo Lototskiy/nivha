@@ -38,6 +38,8 @@ import './assets/css/blocks/business.scss';
 import './assets/css/blocks/contact.scss';
 import './assets/css/blocks/confidence.scss';
 import './assets/css/blocks/faq.scss';
+import './assets/css/blocks/block-travel.scss';
+
 
 
 
