@@ -67,8 +67,6 @@
         padding-top: 3rem;
         border-top: 1px solid rgba(13, 13, 14, 0.08);
 
-        &-list {}
-
         &-item {
             margin-bottom: 0.5rem;
 
@@ -92,7 +90,7 @@
                 transition: fill .5s;
             }
 
-            &.active {
+            &--active {
                 color: $primary-c;
                 background-color: #fff;
 
