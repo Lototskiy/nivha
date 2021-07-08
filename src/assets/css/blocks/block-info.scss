@@ -1,5 +1,17 @@
 .block-info {
     display: flex;
+
+    @media screen and (max-width:$large_tablet) {
+        flex-direction: column;
+        margin-bottom: 5.6rem;
+    }
+
+    .simple-title {
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 2.4rem;
+        }
+    }
+    
     .img-wrap {
         margin-right: 3.4rem;
         flex-shrink: 0;
@@ -10,6 +22,10 @@
         line-height: 150%;
         color: #000000;
         max-width: 512px;
+
+        @media screen and (max-width:$large_tablet) {
+            padding-top: 0rem;
+        }
 
         p {
             margin-bottom: 2.4rem;

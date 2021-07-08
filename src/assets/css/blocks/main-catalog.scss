@@ -10,6 +10,10 @@
     .simple-title {
         font-size: 5.6rem;
 
+        @media screen and (max-width:$large_tablet) {
+			font-size: 4rem;
+		}
+
     }
 
     .breadcrumb {
