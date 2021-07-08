@@ -2,6 +2,10 @@
     padding-top: 4.5rem;
     padding-bottom: 3.5rem;
 
+    @media screen and (max-width:$large_tablet) {
+        padding-top: 3.2rem;
+    }
+
     &__provider {
         display: flex;
         align-items: center;
@@ -42,6 +46,12 @@
         max-width: 103rem;
         width: 100%;
         margin-bottom: 4.5rem;
+
+        @media screen and (max-width:$large_tablet) {
+            font-size: 4rem;
+            max-width: 35rem;
+            margin-bottom: 3.2rem;
+        }
     }
 
     &__advantages {
@@ -52,16 +62,37 @@
         justify-content: space-between;
         margin-bottom: 6.5rem;
 
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+        }
+
         &-item {
             width: calc((100% - 5rem * 2) / 3);
             display: flex;
             align-items: center;
+
+            @media screen and (max-width:$large_tablet) {
+                width: 100%;
+                margin-bottom: 3rem;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
         }
 
         &-text {
             margin-left: 2.5rem;
             font-size: 2rem;
             line-height: 130%;
+
+            br {
+                display: none;
+
+                @media screen and (max-width:$large_tablet) {
+                    display: block;
+                }
+            }
         }
     }
 
@@ -70,8 +101,16 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @media screen and (max-width:$large_tablet) {
+            flex-direction: column;
+        }
+
         .pack {
             width: calc((100% - 2.4rem * 1) / 2);
+
+            @media screen and (max-width:$large_tablet) {
+                width: 100%;
+            }
         }
     }
 }
