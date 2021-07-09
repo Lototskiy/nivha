@@ -4,12 +4,13 @@ mixin pack(params)
             .pack__content
                 .pack__content-title #{params.title}
                 .pack__content-price £#{params.price}
-                ul.pack__content-list 
-                    li.pack__content-item #{params.item1}
-                    li.pack__content-item #{params.item2}
-                    if params.item3 == false
-                    else
-                        li.pack__content-item #{params.item3}
+                .content
+                    ul
+                        li #{params.item1}
+                        li #{params.item2}
+                        if params.item3 == false
+                        else
+                            li #{params.item3}
                 .pack__content-btn.pack__content-btn--desktop
                     .btn.btn--empty Learn more
                     .btn.btn--yellow #{params.btn}

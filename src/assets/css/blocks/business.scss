@@ -37,27 +37,6 @@
             margin-bottom: 2rem;
         }
 
-        &-list {
-            list-style: initial;
-            padding-left: 2rem;
-            margin-bottom: 3rem;
-            font-weight: 500;
-            font-size: 1.6rem;
-            line-height: 140%;
-
-            @media screen and (max-width:$large_tablet) {
-                padding-left: 1.5rem;
-            }
-        }
-
-        &-item {
-            margin-bottom: 0.5rem;
-
-            &:last-child {
-                margin-bottom: 0px;
-            }
-        }
-
         &-btn {
             .btn {
                 background-color: $secondary-c;
