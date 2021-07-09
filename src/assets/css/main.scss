@@ -77,6 +77,9 @@ main {
 	width: calc(100% - 33.5rem);
 	position: relative;
 	padding-top: 10.4rem;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 
 	@media screen and (max-width:$large_tablet) {
 		width: 100%;
