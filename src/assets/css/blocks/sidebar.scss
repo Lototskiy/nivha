@@ -9,17 +9,17 @@
         padding: 0 20px;
     }
 
-    .faculties__tabs--sticky {
+    &--sticky {
         position: fixed;
         top: 10rem !important;
     }
 
-    .faculties__tabs--stop {
+    &--stop {
         position: relative;
     }
 
     >div {
-        &:not(.faculties__tabs--sticky) {
+        &:not(.sidebar--sticky) {
             width: 100% !important;
         }
     }
