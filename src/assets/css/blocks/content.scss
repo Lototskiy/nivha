@@ -7,4 +7,44 @@
     &__weight {
         font-weight: bold;
     }
+
+    .business__content & {
+        ul {
+            padding-left: 2rem;
+            margin-bottom: 3rem;
+
+            @media screen and (max-width:$large_tablet) {
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+    ul {
+        margin-bottom: 2.5rem;
+        list-style: initial;
+        padding-left: 3rem;
+        font-weight: 500;
+        line-height: 140%;
+
+        .pack--orange & {
+            color: #fff;
+        }
+
+        .pack--green & {
+            color: #fff;
+        }
+
+        @media screen and (max-width:$large_tablet) {
+            padding-left: 1.9rem;
+            margin-bottom: 0;
+        }
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
 }
