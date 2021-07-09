@@ -17,6 +17,10 @@
         margin-right: 3.4rem;
         flex-shrink: 0;
         max-width: 34.2rem;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 2rem;
+        }
     }
     .content {
         padding-top: 2rem;
