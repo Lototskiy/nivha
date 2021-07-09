@@ -92,10 +92,10 @@
                     
                 }
 
-                &.active {
+                &.toogles__item-title--active {
                     color: #2A8BA3;
                 }
-                &.active:after {
+                &.toogles__item-title--active:after {
                     width: 100%;
                 }
              }

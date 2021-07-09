@@ -46,7 +46,6 @@ import './assets/css/blocks/block-travel.scss';
 // JS
 
 import './assets/js/toogles';
-import './assets/js/tabs';
 import './assets/js/popup';
 import './assets/js/inputs';
 import './assets/js/inputs-mask';
