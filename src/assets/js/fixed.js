@@ -1,7 +1,7 @@
 if (window.innerWidth > 1014) {
     $(document).ready(function () {
         (function () {
-            window.a = document.querySelector('.sidebar');
+            window.a = document.querySelector('.sidebar__wrap');
             console.log(window.a);
             window.b = null;
             window.P = 15; // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
@@ -53,19 +53,4 @@ if (window.innerWidth > 1014) {
         })()
 
     });
-}
-
-window.refreshFixedIframes = function () {
-
-    window.removeEventListener('scroll', window.acroll);
-
-    let stick = document.querySelector('.faculties__tabs > div:not(.faculties__tabs-wrap)');
-    stick.removeAttribute("style");
-    stick.querySelector("div").removeAttribute("style");
-
-    window.a = document.querySelector('.toogles__item--active .faculties__tabs');
-    console.log(window.a);
-    window.b = null;
-    window.P = 15;
-    window.addEventListener('scroll', window.acroll);
 }
