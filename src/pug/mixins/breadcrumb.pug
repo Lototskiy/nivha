@@ -1,5 +1,5 @@
-mixin breadcrumb(...items)
-  .breadcrumb__list
-    each item in items
+
+mixin breadcrumb(items)
       li.breadcrumb__item
-        a(href="#").breadcrumb__link= item
+        a(href=items.src).breadcrumb__link
+          |#{items.name}
