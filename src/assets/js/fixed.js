@@ -1,4 +1,4 @@
-if (window.innerWidth > 1014) {
+if (window.innerWidth > 1024) {
     $(document).ready(function () {
         (function () {
             window.a = document.querySelector('.sidebar__wrap');
@@ -32,7 +32,7 @@ if (window.innerWidth > 1014) {
                     R = Math.round(Ra.top + window.b.getBoundingClientRect().height - document.querySelector('.business').getBoundingClientRect().top + 100); // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
                 if ((Ra.top - 72 - window.P) <= 0) {
                     if ((Ra.top - 72 - window.P) <= R) {
-                        window.b.className = '.sidebar--stop';
+                        window.b.className = 'sidebar--stop';
                         window.b.style.top = -R + 'px';
                     } else {
                         window.b.className = 'sidebar--sticky';
