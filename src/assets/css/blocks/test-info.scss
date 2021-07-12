@@ -70,6 +70,7 @@
         font-size: 1.8rem;
         line-height: 2rem;
         padding-bottom: 1.6rem;
+        transition: all 0.5s;
 
         &:after {
             content: '';
@@ -83,6 +84,10 @@
             transition: all 0.5s;
 
             
+        }
+
+        &:hover {
+            color: #2A8BA3;
         }
 
         &.toogles__item-title--active {

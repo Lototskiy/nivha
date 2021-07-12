@@ -1,7 +1,9 @@
 section.main-catalog 
     .center-wrap
         .breadcrumb
-            +breadcrumb( 'Home', 'for Individuals')
+            .breadcrumb__list
+                +breadcrumb( {src: 'index.html', name: 'Home'})
+                +breadcrumb( {src: 'catalog.html', name: 'for Individuals'})
         h1.simple-title
             |Diagnostics of the COVID-19 for individuals
         .content.sub-title 
