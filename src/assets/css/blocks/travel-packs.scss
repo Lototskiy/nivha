@@ -22,13 +22,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: -2.4rem;
 
         @media screen and (max-width:$large_tablet) {
             flex-direction: column;
+            margin-bottom: 0;
         }
 
         .pack {
             width: calc((100% - 2.4rem * 1) / 2);
+            margin-bottom: 2.4rem;
 
             @media screen and (max-width:$large_tablet) {
                 width: 100%;
