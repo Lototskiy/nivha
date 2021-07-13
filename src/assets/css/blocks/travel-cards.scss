@@ -42,8 +42,10 @@
         &.green {
             background: #046C1C;
             color: #fff;
-            .cards__title:after {
-                background: #ffffff;
+            .cards__title {
+                span:after {
+                    background: #ffffff;
+                }
             }
             .cards__sub-title {
                 color: #ffffff;
@@ -57,8 +59,10 @@
         &.orang {
             background: #C65300;
             color: #fff;
-            .cards__title:after {
-                background: #ffffff;
+            .cards__title {
+                span:after {
+                    background: #ffffff;
+                }
             }
             .cards__sub-title {
                 color: #ffffff;
@@ -119,9 +123,6 @@
                     justify-content: center;
                 }
                  
-                &:hover {
-                    opacity: 0.7;
-                }   
                 svg {
                     fill: #001602;
                     margin-left: 1.2rem;
