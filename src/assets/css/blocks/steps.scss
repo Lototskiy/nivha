@@ -40,6 +40,13 @@
             font-size: 1.4rem;
             line-height: 150%;
         }
+
+        h3 {
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin-bottom: 0.8rem;
+        }
     }
     &__number {
         position: absolute;
@@ -57,10 +64,5 @@
         background-position: center center;
         background-size: contain;
     }
-    &__title {
-        font-weight: bold;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        margin-bottom: 0.8rem;
-    }
+    
 }
