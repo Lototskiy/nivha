@@ -1,7 +1,7 @@
 .test-info {
     .content {
 
-        h6 {
+        h3 {
             font-weight: bold;
             font-size: 1.8rem;
             line-height: 150%;
@@ -71,7 +71,7 @@
         line-height: 2rem;
         padding-bottom: 1.6rem;
         transition: all 0.5s;
-
+        cursor: pointer;
         &:after {
             content: '';
             position: absolute;

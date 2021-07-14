@@ -14,7 +14,7 @@
     }
 
     .mobil__on {
-        @media screen and (max-width:$large_desktop) {
+        @media screen and (min-width:$large_mobile) {
             display: none;
         }
         @media screen and (max-width:$large_tablet) {
