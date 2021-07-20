@@ -11,11 +11,12 @@ block content
             .breadcrumb__list
                 +breadcrumb( {src: 'index.html', name: 'Home'})
                 +breadcrumb( {src: 'corporate.html', name: 'Corporate services'})
-        h1.simple-title
-            |Keep your employees healthy
-        .content
-            p
-                |Nivha, a leading provider of biometric testing services, population health and comprehensive workforce strategies, has recently launched employee on-site or remote COVID-19 screening and testing services designed to support overall health care, risk management and employer Return to Work/Stay at Work strategies. These services use testing by Nivha  personnel located throughout the country and are powered by the diagnostic testing capabilities of Nivha laboratories.
+        .content--20
+            h1.simple-title
+                |Keep your employees healthy
+            .content
+                p
+                    |Nivha, a leading provider of biometric testing services, population health and comprehensive workforce strategies, has recently launched employee on-site or remote COVID-19 screening and testing services designed to support overall health care, risk management and employer Return to Work/Stay at Work strategies. These services use testing by Nivha  personnel located throughout the country and are powered by the diagnostic testing capabilities of Nivha laboratories.
         //- advantages//////////////////////////
         .advantages
             .advantages__item 
@@ -35,43 +36,7 @@ block content
                 span 
                     |Safety and convenience
         //- form contact//////////////////////////
-        .you-contact
-            form.you-contact__form.inputs(action="#")
-                h2 Contact us to discuss your requirements
-                p Please submit your information below and one of our staff members will reach out to discuss a plan that will work for your business.
-                .inputs__field-item
-                    .inputs__field-row
-                        .inputs__field-wrap.inputs__field-wrap--50
-                            input.inputs__field(type="text" placeholder="Your name")
-                        .inputs__field-wrap.inputs__field-wrap--50
-                            input.inputs__field(type="text" placeholder="Company name")
-                    .inputs__field-wrap
-                        span.select_placeholder
-                        select.select__field
-                            option(value="val1") 
-                                |value1
-                            option(value="val2") 
-                                |value2
-                            option(value="val3") 
-                                |value3
-                .inputs__field-item
-                    h3.inputs__title
-                        |Contact information
-                    .inputs__field-row
-                        .inputs__field-wrap.inputs__field-wrap--50
-                            input.inputs__field(type="text" placeholder="Business Email")
-                        .inputs__field-wrap.inputs__field-wrap--50
-                            input.inputs__field(type="text" placeholder="Phone")
-                    .inputs__field-wrap
-                        textarea.inputs__field(type="text")
-                button.btn.btn--yellow
-                    |Send request 
-                    svg(viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg')
-                            path(d='M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z')
-            .you-contact__aside
-                .img-wrap 
-                    div 
-                        img(src="you-contact-aside.png", alt="")
+        include ../includes/you-contact
         //- text content//////////////////////////
         .test-info
             .content
@@ -132,57 +97,8 @@ block content
                         |Direct messages on <a href='#'>Facebook</a>, <a href='#'>Twitter</a>.
                     li
                         |On our contact center +44 (0) 2890 737 942
-        //- PAGE 2
-        h1.simple-title
-            |Keep your employees healthy
-        .content
-            p
-                |Nivha, a leading provider of biometric testing services, population health and comprehensive workforce strategies, has recently launched employee on-site or remote COVID-19 screening and testing services designed to support overall health care, risk management and employer Return to Work/Stay at Work strategies. These services use testing by Nivha  personnel located throughout the country and are powered by the diagnostic testing capabilities of Nivha laboratories.
-        //- PAGE 2
-        .advantages
-            .advantages__item 
-                span.advantages__number
-                    |18
-                span 
-                    |years on the medical services market
-            .advantages__item 
-                span.advantages__number
-                    |79k
-                span 
-                    |patients per year
-            .advantages__item 
-                span.advantages__number
-                    |120k
-                span 
-                    |carried out researches per year
-        //- PAGE 2
-        .test__info 
-            h2.test-info__title Laboratory Nivha - the world's leading technologies in the field of laboratory diagnostics for patients
-        .director
-            .director__img 
-                .img-wrap 
-                    div 
-                        img(src="director-avatar.png", alt="")
-            .director__quote
-                blockquote 
-                    |“We treat our clients professionally and provide a comprehensive, quality service to meet their needs”
-                .director__name
-                    span Wilbur McDonald,
-                    span Managing Director at Nivha
-        .aspiration
-            .aspiration__row 
-                .aspiration__item
-                    .content
-                        h3
-                            |Vision
-                        p 
-                            |Nivha aspires to become Ireland's premier provider of drugs and alcohol screening and detection services, through outstanding customer service and expert service provision.
-                .aspiration__item
-                    .content
-                        h3
-                            |Values
-                        p 
-                            |Nivha believes the customer deserves the best quality service available to suit their requirements. Nivha also believes in provision of a Quality service embedded in a Quality culture at a cost-effective price.
+       
+        
 
 
         
