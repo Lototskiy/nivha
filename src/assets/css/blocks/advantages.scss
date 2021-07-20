@@ -1,0 +1,26 @@
+.advantages {
+    display: flex;
+    align-items: center;
+    padding: 4.2rem 0rem;
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-right: 2.4rem;
+        >img {
+            width: 100%;
+            max-width: 6.4rem;
+            margin-right: 2.4rem;
+        }
+        span {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 130%;
+        }
+    }
+    &__number {
+        font-weight: bold;
+        font-size: 4.4rem;
+        line-height: 130%;
+        color: #2A8BA3;
+    }
+}

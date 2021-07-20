@@ -22,7 +22,10 @@ import './assets/css/blocks/block-info.scss';
 import './assets/css/blocks/test-info.scss';
 import './assets/css/blocks/steps.scss';
 import './assets/css/blocks/sidebar.scss';
-
+import './assets/css/blocks/advantages.scss';
+import './assets/css/blocks/you-contact.scss';
+import './assets/css/blocks/director.scss';
+import './assets/css/blocks/aspiration.scss';
 
 
 
