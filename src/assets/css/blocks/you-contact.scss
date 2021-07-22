@@ -1,0 +1,54 @@
+.you-contact {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5.6rem;
+
+    @media screen and (max-width:$large_tablet)  {
+        flex-direction: column;
+    }
+    &__form {
+        padding: 4rem;
+        background: #FFFFFF;
+        border-radius: 12px;
+
+        @media screen and (max-width:$large_tablet)  {
+            padding: 2.4rem;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+            display: inline-block;
+            margin-bottom: 1.3rem;
+        }
+        p {
+            display: inline-block;
+            margin-bottom: 3.2rem;
+        }
+        .btn {
+            @media screen and (max-width:$large_tablet) {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    &__aside {
+        width: 100%;
+        max-width: 43.2rem;
+        flex-shrink: 0;
+        margin-left: 3.2rem;
+
+        @media screen and (max-width:$large_tablet)  {
+            display: none;
+        }
+        
+        .img-wrap {
+            background: #C4C4C4;
+            border-radius: 16px;
+            overflow: hidden;
+            div {
+                padding-bottom: 65.28%;
+             }
+        }
+    }
+}

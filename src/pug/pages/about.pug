@@ -1,0 +1,43 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Nivha-Corporate';
+  - var pageClass = 'corporate-page';
+
+block content
+  section.main-catalog 
+    .center-wrap
+        .breadcrumb
+            .breadcrumb__list
+                +breadcrumb( {src: 'index.html', name: 'Home'})
+                +breadcrumb( {src: 'about.html', name: 'About Nivha'})
+        .content--20
+            h1.simple-title
+                |Keep your employees healthy
+            .content
+                p
+                    |Nivha, a leading provider of biometric testing services, population health and comprehensive workforce strategies, has recently launched employee on-site or remote COVID-19 screening and testing services designed to support overall health care, risk management and employer Return to Work/Stay at Work strategies. These services use testing by Nivha  personnel located throughout the country and are powered by the diagnostic testing capabilities of Nivha laboratories.
+        .advantages
+            .advantages__item 
+                span.advantages__number
+                    |18
+                span 
+                    |years on the medical services market
+            .advantages__item 
+                span.advantages__number
+                    |79k
+                span 
+                    |patients per year
+            .advantages__item 
+                span.advantages__number
+                    |120k
+                span 
+                    |carried out researches per year
+        .test__info 
+            h2.test-info__title Laboratory Nivha - the world's leading technologies in the field of laboratory diagnostics for patients
+        include ../includes/director
+        include ../includes/aspiration
+
+
+        
+//- block script

@@ -1,0 +1,105 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Nivha-Corporate';
+  - var pageClass = 'corporate-page';
+
+block content
+  section.main-catalog 
+    .center-wrap
+        .breadcrumb
+            .breadcrumb__list
+                +breadcrumb( {src: 'index.html', name: 'Home'})
+                +breadcrumb( {src: 'corporate.html', name: 'Corporate services'})
+        .content--20
+            h1.simple-title
+                |Keep your employees healthy
+            .content
+                p
+                    |Nivha, a leading provider of biometric testing services, population health and comprehensive workforce strategies, has recently launched employee on-site or remote COVID-19 screening and testing services designed to support overall health care, risk management and employer Return to Work/Stay at Work strategies. These services use testing by Nivha  personnel located throughout the country and are powered by the diagnostic testing capabilities of Nivha laboratories.
+        //- advantages//////////////////////////
+        .advantages
+            .advantages__item 
+                img(src="assets/images/svg/icon-advantages-1.svg", alt="")
+                span 
+                    |Fastest results
+            .advantages__item 
+                img(src="assets/images/svg/icon-advantages-2.svg", alt="")
+                span 
+                    |Favorable prices (volume discounts)
+            .advantages__item 
+                img(src="assets/images/svg/icon-advantages-3.svg", alt="")
+                span 
+                    |UKAS accredited private provider
+            .advantages__item 
+                img(src="assets/images/svg/icon-advantages-4.svg", alt="")
+                span 
+                    |Safety and convenience
+        //- form contact//////////////////////////
+        include ../includes/you-contact
+        //- text content//////////////////////////
+        .test-info
+            .content
+                h3 
+                    |Why is coronavirus testing important for your business?
+                ul 
+                    li 
+                        |To safeguard staff from COVID-19 exposure
+                    li
+                        |Minimise disruption to business
+                    li
+                        |Reduce absenteeism due to self-isolation
+                    li
+                        |muscle pain, low performance, high fatigue (44%);
+                    li
+                        |To identify those who have been in contact with COVID-19 positive individuals
+                h3 
+                    |Ongoing corporate covid testing will help your business by enabling you to identify:
+                ul 
+                    li 
+                        |Symptomatic Individuals who test POSITIVE for COVID-19.
+                    li
+                        |Asymptomatic Individuals who test POSITIVE for COVID-19. These are perhaps the most important and pose the highest risk to a workforce.
+                    li
+                        |Identifying them prior to returning to will allow you to safeguard all staff.
+                    li
+                        |Those individuals with antibodies for SARS-CoV-2 which identify a previous infection.
+                    li
+                        |a feeling of congestion in the chest (> 20%).
+                h3 
+                    |What is the recommended COVID-19 testing strategy?
+                p 
+                    |At Nivha our clinical team recommend using a combined COVID-19 testing programme of both the PCR (swab) test and antibody test for optimal results.
+                    |The PCR swab test identifies which employees currently have the active virus and consequently whether they are infectious to others. The second component of the antibody test is crucial in order to understand if your employee has previously had the virus of not. Thus, helping identify those who may have been “silent carriers”. 
+                    |Scientific research is ongoing into whether previous infections signify that the person has developed a potential immunity to the virus. At this stage, scientific consensus continues to be that immunity remains unconfirmed.
+                    |Utilising a combination of both tests provides your company with a wealth of crucial information in which to make well-informed strategic steps to start safely implementing a phased return to work.
+                h3 
+                    |What can Nivha provide?
+                ul 
+                    li 
+                        |PCR(Active virus) and antibody tests.
+                    li
+                        |Pre-Travel (PCR Swabs) and Post Travel test (Day 2 and Day 8 test, Test to Release). 
+                    li
+                        |Samples analysed by an accredited laboratory.
+                    li
+                        |PCR Swabs with 99% sensitivity and specificity and 99% accurate antibody tests.
+                    li
+                        |PCR Swabs with 99% sensitivity and specificity and 99% accurate antibody tests.
+                    li
+                        |Results shared with the patient and company. 
+                    li
+                        |Positive results reported to Public Health England.
+                h3 
+                    |Where to ask a questions?
+                ul 
+                    li 
+                        |Direct messages on <a href='#'>Facebook</a>, <a href='#'>Twitter</a>.
+                    li
+                        |On our contact center +44 (0) 2890 737 942
+       
+        
+
+
+        
+//- block script

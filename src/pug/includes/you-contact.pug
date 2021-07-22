@@ -1,0 +1,46 @@
+.you-contact
+            form.you-contact__form.inputs(action="#")
+                .content
+                    h2 Contact us to discuss your requirements
+                    p Please submit your information below and one of our staff members will reach out to discuss a plan that will work for your business.
+                .inputs__field-item
+                    .inputs__field-row
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            img.inputs__icon(src="assets/images/svg/inputs-icon-1.svg", alt="")
+                            input.inputs__field(type="text" placeholder="Your name")
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            img.inputs__icon(src="assets/images/svg/inputs-icon-2.svg", alt="")
+                            input.inputs__field(type="text" placeholder="Company name")
+                    .inputs__field-wrap
+                        img.inputs__icon(src="assets/images/svg/inputs-icon-3.svg", alt="")
+                        span.select_placeholder
+                        select.select__field
+                            option(value="placeholder" disabled selected hidden)
+                                |Number of employees?
+                            option(value="val1") 
+                                |value1
+                            option(value="val2") 
+                                |value2
+                            option(value="val3") 
+                                |value3
+                .inputs__field-item
+                    h3.inputs__title
+                        |Contact information
+                    .inputs__field-row
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            img.inputs__icon(src="assets/images/svg/inputs-icon-4.svg", alt="")
+                            input.inputs__field(type="text" placeholder="Business Email")
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            img.inputs__icon(src="assets/images/svg/inputs-icon-5.svg", alt="")
+                            input.inputs__field(type="text" placeholder="Phone")
+                    .inputs__field-wrap
+                        img.inputs__icon(src="assets/images/svg/inputs-icon-6.svg", alt="")
+                        textarea.textarea__field(type="text" placeholder="Message")
+                button.btn.btn--yellow
+                    |Send request 
+                    svg(viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z')
+            .you-contact__aside
+                .img-wrap 
+                    div 
+                        img(src="assets/images/png/you-contact-aside.png", alt="")
