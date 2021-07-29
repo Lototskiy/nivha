@@ -1,6 +1,71 @@
-#form.popup-wrap
+#login.popup-wrap
     .popup
-        .popup__close(onclick="close_popup('form')")
-            div
-            div
         .popup__inner
+            .popup__inner-left(style='background-image: url("assets/images/png/bg-login.png");')
+                img(src="assets/images/svg/logo.svg", alt="")
+            .popup__inner-right 
+                .popup__form 
+                    .popup__form-top 
+                        h3.popup__form-title 
+                            |Log in
+                        .popup__close(onclick="close_popup('login')")
+                            div
+                            div
+                    .popup__form-btn-wrap 
+                        a(href="#").popup__form-btn.google
+                            img(src="assets/images/svg/google.svg", alt="")
+                            |with Google 
+                        a(href="#").popup__form-btn.facebook
+                            img(src="assets/images/svg/facebook.svg", alt="")
+                            |with Facebook
+                    .popup__form-sub-title  
+                        span or log in with email
+                    .inputs__field-wrap
+                        .inputs__icon
+                            img(src="assets/images/svg/mail.svg", alt="")
+                        input.inputs__field(type="text" placeholder='Your email')
+                    .inputs__field-wrap
+                        .inputs__icon
+                            img(src="assets/images/svg/key.svg", alt="")
+                        input.inputs__field(type="password" placeholder='Password')
+                    a(href="#").btn.btn--yellow 
+                        |Log in
+                        svg(viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z')
+                    .popup__form-bottom 
+                        |Don’t have an account?
+                        a(href="#")
+                            |Register
+#register.popup-wrap
+    .popup
+        .popup__inner
+            .popup__inner-left(style='background-image: url("assets/images/png/bg-login-2.png");')
+            .popup__inner-right 
+                .popup__form 
+                    .popup__form-top 
+                        h3.popup__form-title 
+                            |Registration
+                        .popup__close(onclick="close_popup('login')")
+                            div
+                            div
+                    .popup__form-btn-wrap 
+                        a(href="#").popup__form-btn.google
+                            img(src="assets/images/svg/google.svg", alt="")
+                            |with Google 
+                        a(href="#").popup__form-btn.facebook
+                            img(src="assets/images/svg/facebook.svg", alt="")
+                            |with Facebook
+                    .popup__form-sub-title  
+                        span or register with email
+                    .inputs__field-wrap
+                        .inputs__icon
+                            img(src="assets/images/svg/mail.svg", alt="")
+                        input.inputs__field(type="text" placeholder='Your email')
+                    a(href="#").btn.btn--yellow 
+                        |Continue with email
+                        svg(viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z')
+                    .popup__form-bottom 
+                        |Already have an account?
+                        a(href="#")
+                            |Log in

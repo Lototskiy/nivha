@@ -134,4 +134,11 @@ h4 {
 			object-fit: cover;
 		}
 	}
+	&--contain {
+		>div {
+			img {
+				object-fit: contain;
+			}
+		}
+	}
 }

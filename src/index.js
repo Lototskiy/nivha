@@ -26,6 +26,10 @@ import './assets/css/blocks/advantages.scss';
 import './assets/css/blocks/you-contact.scss';
 import './assets/css/blocks/director.scss';
 import './assets/css/blocks/aspiration.scss';
+import './assets/css/blocks/table.scss';
+import './assets/css/blocks/booking-success.scss';
+
+
 
 
 
