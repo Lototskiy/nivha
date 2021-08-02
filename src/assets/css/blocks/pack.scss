@@ -119,6 +119,15 @@
 
             .btn {
                 padding: 0 2.4rem;
+                &--empty {
+                     &:focus {
+                    line-height: calc(4.8rem - -0.3rem);
+                    padding: 0 2.15rem;
+                    background: #fff;
+                    border: 0.4rem solid rgba(13, 13, 14, 0.16);
+                }
+                }
+               
 
                 @media screen and (max-width:$large_tablet) {
                     justify-content: center;

@@ -12,28 +12,28 @@ section.main-catalog
         .anchor 
             ul.anchor__list
                 li.anchor__item
-                    a(href="#").anchor__link
+                    a(href="#travel").anchor__link
                         |Travel
                 li.anchor__item
-                    a(href="#").anchor__link
+                    a(href="#travelPacks").anchor__link
                         |Packs
                 li.anchor__item
-                    a(href="#").anchor__link
+                    a(href="#private").anchor__link
                         |Private
-        .block-travel
+        .block-travel#travel
             h2.block-travel__title
                 |Travel
             .cards
                 +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Pre-Departure Fit to Fly only', subTitle: 'Swab • 1 day', price: '65'})
                 +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Day 5 test to Release', subTitle: 'Deoxygenated blood • 1 day', price: '65'})
                 +travelCards({class: '', src: 'assets/images/png/cards-img-2.png', title: 'Express PCR test', subTitle: 'Deoxygenated blood • 3 hours • Nothern Ireland only', price: '165'})
-        .block-travel
+        .block-travel#travelPacks
             h2.block-travel__title
                 |Travel Packs
             .cards
                 +travelCards({class: 'green', src: 'assets/images/png/cards-img-3.png', title: 'Green Travel Pack', subTitle: 'Pre-Derarture + Day 2 tests', price: '65'})
                 +travelCards({class: 'orang', src: 'assets/images/png/cards-img-4.png', title: 'Amber Travel Pack', subTitle: 'Pre-Derarture + Day 2 & Day 8 tests', price: '65'})
-        .block-travel
+        .block-travel#private
             h2.block-travel__title
                 |Private
             .cards

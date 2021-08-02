@@ -275,14 +275,24 @@
                 }
                 &.google {
                     background: #DC0000;
+
                     &:hover {
-                        background: #2A8BA3;
+                        background: #B00000;
+                        // color: #0D0D0E;
+            
+                        // svg {
+                        // 	fill: #fff;
+                        // }
                     }
+ 
+
+
                 }
                 &.facebook {
                     background: #006FE8;
                     &:hover {
-                        background: #2A8BA3;
+                        background: #0056b3;
+
                     }
                 }
 

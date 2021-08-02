@@ -34,7 +34,7 @@
                             path(d='M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z')
                     .popup__form-bottom 
                         |Don’t have an account?
-                        a(href="#")
+                        a(href="#" onclick="close_popup('login');show_popup('register');")
                             |Register
 #register.popup-wrap
     .popup
@@ -45,7 +45,7 @@
                     .popup__form-top 
                         h3.popup__form-title 
                             |Registration
-                        .popup__close(onclick="close_popup('login')")
+                        .popup__close(onclick="close_popup('register')")
                             div
                             div
                     .popup__form-btn-wrap 
@@ -67,5 +67,5 @@
                             path(d='M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z')
                     .popup__form-bottom 
                         |Already have an account?
-                        a(href="#")
+                        a(href="#" onclick="close_popup('register');show_popup('login');")
                             |Log in
