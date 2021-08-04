@@ -10,20 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <link href="assets/css/app.css?v=1626780845456" rel="stylesheet"></head>
+  <link href="assets/css/app.css?v=1627898528919" rel="stylesheet"></head>
   <body id="index-page">
     <div class="body__wrapper">
 <div class="aside">
   <div class="aside__wrap"><a class="aside__logo" href="index.html"> <img src="assets/images/svg/logo.svg" alt="">
       <div class="aside__logo-text">COVID-19</div></a>
-    <div class="aside__reception">
-      <div class="btn">
+    <div class="aside__reception"><a class="btn" href="#">
         <svg viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1667 1.50033C12.1667 1.04009 11.7936 0.666992 11.3333 0.666992C10.8731 0.666992 10.5 1.04009 10.5 1.50033V2.33366H5.5V1.50033C5.5 1.04009 5.1269 0.666992 4.66667 0.666992C4.20643 0.666992 3.83333 1.04009 3.83333 1.50033V2.33366H3C1.61929 2.33366 0.5 3.45295 0.5 4.83366V8.16699V14.8337C0.5 16.2144 1.61929 17.3337 3 17.3337H13C14.3807 17.3337 15.5 16.2144 15.5 14.8337V8.16699V4.83366C15.5 3.45295 14.3807 2.33366 13 2.33366H12.1667V1.50033ZM13.8333 7.33366V4.83366C13.8333 4.37342 13.4602 4.00033 13 4.00033H12.1667V4.83366C12.1667 5.2939 11.7936 5.66699 11.3333 5.66699C10.8731 5.66699 10.5 5.2939 10.5 4.83366V4.00033H5.5V4.83366C5.5 5.2939 5.1269 5.66699 4.66667 5.66699C4.20643 5.66699 3.83333 5.2939 3.83333 4.83366V4.00033H3C2.53976 4.00033 2.16667 4.37342 2.16667 4.83366V7.33366H13.8333ZM2.16667 9.00033H13.8333V14.8337C13.8333 15.2939 13.4602 15.667 13 15.667H3C2.53976 15.667 2.16667 15.2939 2.16667 14.8337V9.00033Z"></path>
         </svg>
-        <div class="btn__title">Book appointment</div>
-      </div>
-    </div>
+        <div class="btn__title">Book appointment</div></a></div>
     <nav class="aside__nav">
       <ul class="aside__nav-list"> 
         <li class="aside__nav-item"> <a class="aside__nav-link aside__nav-link--active" href="index.html"><img src="assets/images/svg/aside-nav-icon1.svg" alt="">Home</a></li>
@@ -62,14 +59,14 @@
           </div>
         </form>
       </div>
-      <div class="header__account">
+      <div class="header__account" onclick="show_popup('login')">
         <svg viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C6.23858 0 4 2.23858 4 5C4 7.76142 6.23858 10 9 10C11.7614 10 14 7.76142 14 5C14 2.23858 11.7614 0 9 0ZM6 5C6 3.34315 7.34315 2 9 2C10.6569 2 12 3.34315 12 5C12 6.65685 10.6569 8 9 8C7.34315 8 6 6.65685 6 5Z" fill="#505154"></path>
           <path d="M2.87868 14.8787C3.44129 14.3161 4.20435 14 5 14H13C13.7956 14 14.5587 14.3161 15.1213 14.8787C15.6839 15.4413 16 16.2044 16 17V19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19V17C18 15.6739 17.4732 14.4021 16.5355 13.4645C15.5979 12.5268 14.3261 12 13 12H5C3.67392 12 2.40215 12.5268 1.46447 13.4645C0.526784 14.4021 0 15.6739 0 17V19C0 19.5523 0.447715 20 1 20C1.55228 20 2 19.5523 2 19V17C2 16.2043 2.31607 15.4413 2.87868 14.8787Z" fill="#505154"></path>
         </svg>
         <div class="header__account-title">My account</div>
       </div>
-      <div class="header__basket">
+      <div class="header__basket" onclick="show_popup('register')">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 21C7.10457 21 8 20.1046 8 19C8 17.8954 7.10457 17 6 17C4.89543 17 4 17.8954 4 19C4 20.1046 4.89543 21 6 21Z" stroke="#505154" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           <path d="M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z" stroke="#505154" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -114,25 +111,17 @@
                           <li>Best price in Belfast</li>
                         </ul>
                       </div>
-                      <div class="pack__content-btn pack__content-btn--desktop">
-                        <div class="btn btn--empty">Learn more</div>
-                        <div class="btn btn--yellow">Book test
+                      <div class="pack__content-btn pack__content-btn--desktop"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Book test
                           <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                          </svg>
-                        </div>
-                      </div>
+                          </svg></a></div>
                     </div>
                     <div class="pack__img"> <img src="assets/images/png/pack-img1.png" alt=""></div>
                   </div>
-                  <div class="pack__content-btn pack__content-btn--mobile">
-                    <div class="btn btn--empty">Learn more</div>
-                    <div class="btn btn--yellow">Book test
+                  <div class="pack__content-btn pack__content-btn--mobile"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Book test
                       <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                      </svg>
-                    </div>
-                  </div>
+                      </svg></a></div>
                 </div>
                 <div class="pack">
                   <div class="pack__wrap">
@@ -145,25 +134,17 @@
                           <li>Best price in Belfast</li>
                         </ul>
                       </div>
-                      <div class="pack__content-btn pack__content-btn--desktop">
-                        <div class="btn btn--empty">Learn more</div>
-                        <div class="btn btn--yellow">Book test
+                      <div class="pack__content-btn pack__content-btn--desktop"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Book test
                           <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                          </svg>
-                        </div>
-                      </div>
+                          </svg></a></div>
                     </div>
                     <div class="pack__img"> <img src="assets/images/png/pack-img2.png" alt=""></div>
                   </div>
-                  <div class="pack__content-btn pack__content-btn--mobile">
-                    <div class="btn btn--empty">Learn more</div>
-                    <div class="btn btn--yellow">Book test
+                  <div class="pack__content-btn pack__content-btn--mobile"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Book test
                       <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                      </svg>
-                    </div>
-                  </div>
+                      </svg></a></div>
                 </div>
               </div>
             </div>
@@ -184,25 +165,17 @@
                           <li>Day 2 test</li>
                         </ul>
                       </div>
-                      <div class="pack__content-btn pack__content-btn--desktop">
-                        <div class="btn btn--empty">Learn more</div>
-                        <div class="btn btn--yellow">Buy pack
+                      <div class="pack__content-btn pack__content-btn--desktop"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Buy pack
                           <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                          </svg>
-                        </div>
-                      </div>
+                          </svg></a></div>
                     </div>
                     <div class="pack__img"> <img src="assets/images/png/pack-img3.png" alt=""></div>
                   </div>
-                  <div class="pack__content-btn pack__content-btn--mobile">
-                    <div class="btn btn--empty">Learn more</div>
-                    <div class="btn btn--yellow">Buy pack
+                  <div class="pack__content-btn pack__content-btn--mobile"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Buy pack
                       <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                      </svg>
-                    </div>
-                  </div>
+                      </svg></a></div>
                 </div>
                 <div class="pack pack--orange">
                   <div class="pack__wrap">
@@ -216,25 +189,17 @@
                           <li>Day 8 test</li>
                         </ul>
                       </div>
-                      <div class="pack__content-btn pack__content-btn--desktop">
-                        <div class="btn btn--empty">Learn more</div>
-                        <div class="btn btn--yellow">Buy pack
+                      <div class="pack__content-btn pack__content-btn--desktop"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Buy pack
                           <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                          </svg>
-                        </div>
-                      </div>
+                          </svg></a></div>
                     </div>
                     <div class="pack__img"> <img src="assets/images/png/pack-img4.png" alt=""></div>
                   </div>
-                  <div class="pack__content-btn pack__content-btn--mobile">
-                    <div class="btn btn--empty">Learn more</div>
-                    <div class="btn btn--yellow">Buy pack
+                  <div class="pack__content-btn pack__content-btn--mobile"><a class="btn btn--empty" href="#">Learn more</a><a class="btn btn--yellow" href="#">Buy pack
                       <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-                      </svg>
-                    </div>
-                  </div>
+                      </svg></a></div>
                 </div>
               </div>
             </div>
@@ -248,39 +213,7 @@
       </div>
     </div>
     <div class="about__list"> 
-      <div class="about__item">
-        <div class="about__item-wrap">
-          <div class="about__item-top"> 
-            <div class="about__item-photo">
-              <div class="img-wrap">
-                <div><img src="assets/images/png/about-photo5.png" alt=""></div>
-              </div>
-            </div>
-            <div class="about__item-name">Robin Conway</div>
-          </div>
-          <div class="about__item-rating">
-            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.4311 20.1993C13.1609 20.0573 12.8381 20.0573 12.568 20.1993L6.4323 23.4247C5.75183 23.7824 4.95657 23.2045 5.08653 22.4468L6.25838 15.6145C6.31 15.3135 6.21019 15.0065 5.9915 14.7934L1.02588 9.95498C0.475207 9.41842 0.77893 8.48333 1.53979 8.37276L8.39969 7.37588C8.70175 7.33199 8.96288 7.14229 9.098 6.86859L12.1677 0.650726C12.508 -0.0385719 13.4909 -0.03851 13.8311 0.650832L16.8997 6.86849C17.0348 7.14225 17.296 7.33199 17.5981 7.37589L24.4581 8.3728C25.2189 8.48336 25.5227 9.41836 24.9721 9.95495L20.0075 14.7933C19.7888 15.0065 19.689 15.3136 19.7407 15.6145L20.9135 22.4467C21.0436 23.2044 20.2483 23.7824 19.5678 23.4247L13.4311 20.1993Z" fill="#F6AE2D"></path>
-            </svg>
-            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.4311 20.1993C13.1609 20.0573 12.8381 20.0573 12.568 20.1993L6.4323 23.4247C5.75183 23.7824 4.95657 23.2045 5.08653 22.4468L6.25838 15.6145C6.31 15.3135 6.21019 15.0065 5.9915 14.7934L1.02588 9.95498C0.475207 9.41842 0.77893 8.48333 1.53979 8.37276L8.39969 7.37588C8.70175 7.33199 8.96288 7.14229 9.098 6.86859L12.1677 0.650726C12.508 -0.0385719 13.4909 -0.03851 13.8311 0.650832L16.8997 6.86849C17.0348 7.14225 17.296 7.33199 17.5981 7.37589L24.4581 8.3728C25.2189 8.48336 25.5227 9.41836 24.9721 9.95495L20.0075 14.7933C19.7888 15.0065 19.689 15.3136 19.7407 15.6145L20.9135 22.4467C21.0436 23.2044 20.2483 23.7824 19.5678 23.4247L13.4311 20.1993Z" fill="#F6AE2D"></path>
-            </svg>
-            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.4311 20.1993C13.1609 20.0573 12.8381 20.0573 12.568 20.1993L6.4323 23.4247C5.75183 23.7824 4.95657 23.2045 5.08653 22.4468L6.25838 15.6145C6.31 15.3135 6.21019 15.0065 5.9915 14.7934L1.02588 9.95498C0.475207 9.41842 0.77893 8.48333 1.53979 8.37276L8.39969 7.37588C8.70175 7.33199 8.96288 7.14229 9.098 6.86859L12.1677 0.650726C12.508 -0.0385719 13.4909 -0.03851 13.8311 0.650832L16.8997 6.86849C17.0348 7.14225 17.296 7.33199 17.5981 7.37589L24.4581 8.3728C25.2189 8.48336 25.5227 9.41836 24.9721 9.95495L20.0075 14.7933C19.7888 15.0065 19.689 15.3136 19.7407 15.6145L20.9135 22.4467C21.0436 23.2044 20.2483 23.7824 19.5678 23.4247L13.4311 20.1993Z" fill="#F6AE2D"></path>
-            </svg>
-            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.4311 20.1993C13.1609 20.0573 12.8381 20.0573 12.568 20.1993L6.4323 23.4247C5.75183 23.7824 4.95657 23.2045 5.08653 22.4468L6.25838 15.6145C6.31 15.3135 6.21019 15.0065 5.9915 14.7934L1.02588 9.95498C0.475207 9.41842 0.77893 8.48333 1.53979 8.37276L8.39969 7.37588C8.70175 7.33199 8.96288 7.14229 9.098 6.86859L12.1677 0.650726C12.508 -0.0385719 13.4909 -0.03851 13.8311 0.650832L16.8997 6.86849C17.0348 7.14225 17.296 7.33199 17.5981 7.37589L24.4581 8.3728C25.2189 8.48336 25.5227 9.41836 24.9721 9.95495L20.0075 14.7933C19.7888 15.0065 19.689 15.3136 19.7407 15.6145L20.9135 22.4467C21.0436 23.2044 20.2483 23.7824 19.5678 23.4247L13.4311 20.1993Z" fill="#F6AE2D"></path>
-            </svg>
-            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.4311 20.1993C13.1609 20.0573 12.8381 20.0573 12.568 20.1993L6.4323 23.4247C5.75183 23.7824 4.95657 23.2045 5.08653 22.4468L6.25838 15.6145C6.31 15.3135 6.21019 15.0065 5.9915 14.7934L1.02588 9.95498C0.475207 9.41842 0.77893 8.48333 1.53979 8.37276L8.39969 7.37588C8.70175 7.33199 8.96288 7.14229 9.098 6.86859L12.1677 0.650726C12.508 -0.0385719 13.4909 -0.03851 13.8311 0.650832L16.8997 6.86849C17.0348 7.14225 17.296 7.33199 17.5981 7.37589L24.4581 8.3728C25.2189 8.48336 25.5227 9.41836 24.9721 9.95495L20.0075 14.7933C19.7888 15.0065 19.689 15.3136 19.7407 15.6145L20.9135 22.4467C21.0436 23.2044 20.2483 23.7824 19.5678 23.4247L13.4311 20.1993Z" fill="#F6AE2D"></path>
-            </svg>
-          </div>
-          <div class="about__item-text">
-            <div class="content"> 
-              <p>Excellent professional service. <strong>Quick</strong> results. Availed of COVID test prior flight out to States and upon return to exit quarantine. <strong>Gentle</strong> test and it was administered with patience and care. Dr. Astrid is terrific.</p>
-            </div>
-          </div>
-        </div>
+      <div class="about__item about__item-reverse">
         <div class="about__reverse">
           <div class="about__reverse-top"> 
             <div class="about__reverse-value">99%</div>
@@ -330,21 +263,6 @@
             </div>
           </div>
         </div>
-        <div class="about__reverse">
-          <div class="about__reverse-top"> 
-            <div class="about__reverse-value">99%</div>
-            <svg viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.375 20.875V41.875C13.375 42.5712 13.0984 43.2389 12.6062 43.7312C12.1139 44.2234 11.4462 44.5 10.75 44.5H5.5C4.80381 44.5 4.13613 44.2234 3.64384 43.7312C3.15156 43.2389 2.875 42.5712 2.875 41.875V23.5C2.875 22.8038 3.15156 22.1361 3.64384 21.6438C4.13613 21.1516 4.80381 20.875 5.5 20.875H13.375ZM13.375 20.875C16.1598 20.875 18.8305 19.7688 20.7996 17.7996C22.7688 15.8305 23.875 13.1598 23.875 10.375V7.75C23.875 6.35761 24.4281 5.02226 25.4127 4.03769C26.3973 3.05312 27.7326 2.5 29.125 2.5C30.5174 2.5 31.8527 3.05312 32.8373 4.03769C33.8219 5.02226 34.375 6.35761 34.375 7.75V20.875H42.25C43.6424 20.875 44.9777 21.4281 45.9623 22.4127C46.9469 23.3973 47.5 24.7326 47.5 26.125L44.875 39.25C44.4975 40.8604 43.7814 42.2431 42.8345 43.19C41.8876 44.1369 40.7612 44.5967 39.625 44.5H21.25C19.1614 44.5 17.1584 43.6703 15.6815 42.1935C14.2047 40.7166 13.375 38.7136 13.375 36.625" stroke="#046C1C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </div>
-          <div class="about__reverse-title">Positive feedback</div>
-          <div class="about__reverse-text"> 
-            <div class="content"> 
-              <p>546 286 reviews were left by customers in the last 12 months.</p>
-            </div>
-          </div>
-          <div class="about__reverse-reviews">515 193 are positive.</div>
-        </div>
       </div>
       <div class="about__item">
         <div class="about__item-wrap">
@@ -378,21 +296,6 @@
               <p>When my temperature rose and there was a burning sensation in my lungs, I decided to take a test for <strong>covid-19.</strong> Test was taken and then the result came quickly, it turned out to be positive, it’s good that it turned so quickly and the complications were not yet strong.</p>
             </div>
           </div>
-        </div>
-        <div class="about__reverse">
-          <div class="about__reverse-top"> 
-            <div class="about__reverse-value">99%</div>
-            <svg viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.375 20.875V41.875C13.375 42.5712 13.0984 43.2389 12.6062 43.7312C12.1139 44.2234 11.4462 44.5 10.75 44.5H5.5C4.80381 44.5 4.13613 44.2234 3.64384 43.7312C3.15156 43.2389 2.875 42.5712 2.875 41.875V23.5C2.875 22.8038 3.15156 22.1361 3.64384 21.6438C4.13613 21.1516 4.80381 20.875 5.5 20.875H13.375ZM13.375 20.875C16.1598 20.875 18.8305 19.7688 20.7996 17.7996C22.7688 15.8305 23.875 13.1598 23.875 10.375V7.75C23.875 6.35761 24.4281 5.02226 25.4127 4.03769C26.3973 3.05312 27.7326 2.5 29.125 2.5C30.5174 2.5 31.8527 3.05312 32.8373 4.03769C33.8219 5.02226 34.375 6.35761 34.375 7.75V20.875H42.25C43.6424 20.875 44.9777 21.4281 45.9623 22.4127C46.9469 23.3973 47.5 24.7326 47.5 26.125L44.875 39.25C44.4975 40.8604 43.7814 42.2431 42.8345 43.19C41.8876 44.1369 40.7612 44.5967 39.625 44.5H21.25C19.1614 44.5 17.1584 43.6703 15.6815 42.1935C14.2047 40.7166 13.375 38.7136 13.375 36.625" stroke="#046C1C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </div>
-          <div class="about__reverse-title">Positive feedback</div>
-          <div class="about__reverse-text"> 
-            <div class="content"> 
-              <p>546 286 reviews were left by customers in the last 12 months.</p>
-            </div>
-          </div>
-          <div class="about__reverse-reviews">515 193 are positive.</div>
         </div>
       </div>
       <div class="about__item">
@@ -428,21 +331,6 @@
             </div>
           </div>
         </div>
-        <div class="about__reverse">
-          <div class="about__reverse-top"> 
-            <div class="about__reverse-value">99%</div>
-            <svg viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.375 20.875V41.875C13.375 42.5712 13.0984 43.2389 12.6062 43.7312C12.1139 44.2234 11.4462 44.5 10.75 44.5H5.5C4.80381 44.5 4.13613 44.2234 3.64384 43.7312C3.15156 43.2389 2.875 42.5712 2.875 41.875V23.5C2.875 22.8038 3.15156 22.1361 3.64384 21.6438C4.13613 21.1516 4.80381 20.875 5.5 20.875H13.375ZM13.375 20.875C16.1598 20.875 18.8305 19.7688 20.7996 17.7996C22.7688 15.8305 23.875 13.1598 23.875 10.375V7.75C23.875 6.35761 24.4281 5.02226 25.4127 4.03769C26.3973 3.05312 27.7326 2.5 29.125 2.5C30.5174 2.5 31.8527 3.05312 32.8373 4.03769C33.8219 5.02226 34.375 6.35761 34.375 7.75V20.875H42.25C43.6424 20.875 44.9777 21.4281 45.9623 22.4127C46.9469 23.3973 47.5 24.7326 47.5 26.125L44.875 39.25C44.4975 40.8604 43.7814 42.2431 42.8345 43.19C41.8876 44.1369 40.7612 44.5967 39.625 44.5H21.25C19.1614 44.5 17.1584 43.6703 15.6815 42.1935C14.2047 40.7166 13.375 38.7136 13.375 36.625" stroke="#046C1C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </div>
-          <div class="about__reverse-title">Positive feedback</div>
-          <div class="about__reverse-text"> 
-            <div class="content"> 
-              <p>546 286 reviews were left by customers in the last 12 months.</p>
-            </div>
-          </div>
-          <div class="about__reverse-reviews">515 193 are positive.</div>
-        </div>
       </div>
       <div class="about__item">
         <div class="about__item-wrap">
@@ -477,21 +365,6 @@
             </div>
           </div>
         </div>
-        <div class="about__reverse">
-          <div class="about__reverse-top"> 
-            <div class="about__reverse-value">99%</div>
-            <svg viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.375 20.875V41.875C13.375 42.5712 13.0984 43.2389 12.6062 43.7312C12.1139 44.2234 11.4462 44.5 10.75 44.5H5.5C4.80381 44.5 4.13613 44.2234 3.64384 43.7312C3.15156 43.2389 2.875 42.5712 2.875 41.875V23.5C2.875 22.8038 3.15156 22.1361 3.64384 21.6438C4.13613 21.1516 4.80381 20.875 5.5 20.875H13.375ZM13.375 20.875C16.1598 20.875 18.8305 19.7688 20.7996 17.7996C22.7688 15.8305 23.875 13.1598 23.875 10.375V7.75C23.875 6.35761 24.4281 5.02226 25.4127 4.03769C26.3973 3.05312 27.7326 2.5 29.125 2.5C30.5174 2.5 31.8527 3.05312 32.8373 4.03769C33.8219 5.02226 34.375 6.35761 34.375 7.75V20.875H42.25C43.6424 20.875 44.9777 21.4281 45.9623 22.4127C46.9469 23.3973 47.5 24.7326 47.5 26.125L44.875 39.25C44.4975 40.8604 43.7814 42.2431 42.8345 43.19C41.8876 44.1369 40.7612 44.5967 39.625 44.5H21.25C19.1614 44.5 17.1584 43.6703 15.6815 42.1935C14.2047 40.7166 13.375 38.7136 13.375 36.625" stroke="#046C1C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </div>
-          <div class="about__reverse-title">Positive feedback</div>
-          <div class="about__reverse-text"> 
-            <div class="content"> 
-              <p>546 286 reviews were left by customers in the last 12 months.</p>
-            </div>
-          </div>
-          <div class="about__reverse-reviews">515 193 are positive.</div>
-        </div>
       </div>
       <div class="about__item">
         <div class="about__item-wrap">
@@ -525,21 +398,6 @@
               <p>Excellent professional service. <strong>Quick</strong> results. Availed of COVID test prior flight out to States and upon return to exit quarantine. <strong>Gentle</strong> test and it was administered with patience and care. Dr. Astrid is terrific.</p>
             </div>
           </div>
-        </div>
-        <div class="about__reverse">
-          <div class="about__reverse-top"> 
-            <div class="about__reverse-value">99%</div>
-            <svg viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.375 20.875V41.875C13.375 42.5712 13.0984 43.2389 12.6062 43.7312C12.1139 44.2234 11.4462 44.5 10.75 44.5H5.5C4.80381 44.5 4.13613 44.2234 3.64384 43.7312C3.15156 43.2389 2.875 42.5712 2.875 41.875V23.5C2.875 22.8038 3.15156 22.1361 3.64384 21.6438C4.13613 21.1516 4.80381 20.875 5.5 20.875H13.375ZM13.375 20.875C16.1598 20.875 18.8305 19.7688 20.7996 17.7996C22.7688 15.8305 23.875 13.1598 23.875 10.375V7.75C23.875 6.35761 24.4281 5.02226 25.4127 4.03769C26.3973 3.05312 27.7326 2.5 29.125 2.5C30.5174 2.5 31.8527 3.05312 32.8373 4.03769C33.8219 5.02226 34.375 6.35761 34.375 7.75V20.875H42.25C43.6424 20.875 44.9777 21.4281 45.9623 22.4127C46.9469 23.3973 47.5 24.7326 47.5 26.125L44.875 39.25C44.4975 40.8604 43.7814 42.2431 42.8345 43.19C41.8876 44.1369 40.7612 44.5967 39.625 44.5H21.25C19.1614 44.5 17.1584 43.6703 15.6815 42.1935C14.2047 40.7166 13.375 38.7136 13.375 36.625" stroke="#046C1C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </div>
-          <div class="about__reverse-title">Positive feedback</div>
-          <div class="about__reverse-text"> 
-            <div class="content"> 
-              <p>546 286 reviews were left by customers in the last 12 months.</p>
-            </div>
-          </div>
-          <div class="about__reverse-reviews">515 193 are positive.</div>
         </div>
       </div>
       <div class="about__item about__item--hide"></div>
@@ -621,13 +479,10 @@
             <li>Safety and convenience</li>
           </ul>
         </div>
-        <div class="business__content-btn"> <a class="btn btn--empty" href="#">Learn more</a>
-          <div class="btn">Send request
+        <div class="business__content-btn"> <a class="btn btn--empty" href="#">Learn more</a><a class="btn" href="#">Send request
             <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
-            </svg>
-          </div>
-        </div>
+            </svg></a></div>
       </div>
       <div class="business__img"><img src="assets/images/png/business__img.png" alt=""></div>
     </div>
@@ -918,13 +773,70 @@
     </div>
   </div>
 </div>
-<div class="popup-wrap" id="form">
+<div class="popup-wrap" id="login">
   <div class="popup">
-    <div class="popup__close" onclick="close_popup('form')">
-      <div></div>
-      <div></div>
+    <div class="popup__inner">
+      <div class="popup__inner-left" style="background-image: url(&quot;assets/images/png/bg-login.png&quot;);"><img src="assets/images/svg/logo.svg" alt=""></div>
+      <div class="popup__inner-right"> 
+        <div class="popup__form"> 
+          <div class="popup__form-top"> 
+            <h3 class="popup__form-title">
+               Log in</h3>
+            <div class="popup__close" onclick="close_popup('login')">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="popup__form-btn-wrap"> <a class="popup__form-btn google" href="#"><img src="assets/images/svg/google.svg" alt="">with Google </a><a class="popup__form-btn facebook" href="#"><img src="assets/images/svg/facebook.svg" alt="">with Facebook</a></div>
+          <div class="popup__form-sub-title"> <span>or log in with email</span></div>
+          <div class="inputs__field-wrap">
+            <div class="inputs__icon"><img src="assets/images/svg/mail.svg" alt=""></div>
+            <input class="inputs__field" type="text" placeholder="Your email">
+          </div>
+          <div class="inputs__field-wrap">
+            <div class="inputs__icon"><img src="assets/images/svg/key.svg" alt=""></div>
+            <input class="inputs__field" type="password" placeholder="Password">
+          </div><a class="btn btn--yellow" href="#">
+             Log in
+            <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
+            </svg></a>
+          <div class="popup__form-bottom">
+             Don’t have an account?<a href="#" onclick="close_popup('login');show_popup('register');">Register</a></div>
+        </div>
+      </div>
     </div>
-    <div class="popup__inner"></div>
+  </div>
+</div>
+<div class="popup-wrap" id="register">
+  <div class="popup">
+    <div class="popup__inner">
+      <div class="popup__inner-left" style="background-image: url(&quot;assets/images/png/bg-login-2.png&quot;);"></div>
+      <div class="popup__inner-right"> 
+        <div class="popup__form"> 
+          <div class="popup__form-top"> 
+            <h3 class="popup__form-title">
+               Registration</h3>
+            <div class="popup__close" onclick="close_popup('register')">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="popup__form-btn-wrap"> <a class="popup__form-btn google" href="#"><img src="assets/images/svg/google.svg" alt="">with Google </a><a class="popup__form-btn facebook" href="#"><img src="assets/images/svg/facebook.svg" alt="">with Facebook</a></div>
+          <div class="popup__form-sub-title"> <span>or register with email</span></div>
+          <div class="inputs__field-wrap">
+            <div class="inputs__icon"><img src="assets/images/svg/mail.svg" alt=""></div>
+            <input class="inputs__field" type="text" placeholder="Your email">
+          </div><a class="btn btn--yellow" href="#">
+             Continue with email
+            <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
+            </svg></a>
+          <div class="popup__form-bottom">
+             Already have an account?<a href="#" onclick="close_popup('register');show_popup('login');">Log in</a></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
       </div>
@@ -932,5 +844,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="js/app.js?v=1626780845247"></script></body>
+  <script type="text/javascript" src="js/app.js?v=1627898528674"></script></body>
 </html>

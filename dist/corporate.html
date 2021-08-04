@@ -10,20 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <link href="assets/css/app.css?v=1626780845456" rel="stylesheet"></head>
+  <link href="assets/css/app.css?v=1627898528919" rel="stylesheet"></head>
   <body id="corporate-page">
     <div class="body__wrapper">
 <div class="aside">
   <div class="aside__wrap"><a class="aside__logo" href="index.html"> <img src="assets/images/svg/logo.svg" alt="">
       <div class="aside__logo-text">COVID-19</div></a>
-    <div class="aside__reception">
-      <div class="btn">
+    <div class="aside__reception"><a class="btn" href="#">
         <svg viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1667 1.50033C12.1667 1.04009 11.7936 0.666992 11.3333 0.666992C10.8731 0.666992 10.5 1.04009 10.5 1.50033V2.33366H5.5V1.50033C5.5 1.04009 5.1269 0.666992 4.66667 0.666992C4.20643 0.666992 3.83333 1.04009 3.83333 1.50033V2.33366H3C1.61929 2.33366 0.5 3.45295 0.5 4.83366V8.16699V14.8337C0.5 16.2144 1.61929 17.3337 3 17.3337H13C14.3807 17.3337 15.5 16.2144 15.5 14.8337V8.16699V4.83366C15.5 3.45295 14.3807 2.33366 13 2.33366H12.1667V1.50033ZM13.8333 7.33366V4.83366C13.8333 4.37342 13.4602 4.00033 13 4.00033H12.1667V4.83366C12.1667 5.2939 11.7936 5.66699 11.3333 5.66699C10.8731 5.66699 10.5 5.2939 10.5 4.83366V4.00033H5.5V4.83366C5.5 5.2939 5.1269 5.66699 4.66667 5.66699C4.20643 5.66699 3.83333 5.2939 3.83333 4.83366V4.00033H3C2.53976 4.00033 2.16667 4.37342 2.16667 4.83366V7.33366H13.8333ZM2.16667 9.00033H13.8333V14.8337C13.8333 15.2939 13.4602 15.667 13 15.667H3C2.53976 15.667 2.16667 15.2939 2.16667 14.8337V9.00033Z"></path>
         </svg>
-        <div class="btn__title">Book appointment</div>
-      </div>
-    </div>
+        <div class="btn__title">Book appointment</div></a></div>
     <nav class="aside__nav">
       <ul class="aside__nav-list"> 
         <li class="aside__nav-item"> <a class="aside__nav-link aside__nav-link--active" href="index.html"><img src="assets/images/svg/aside-nav-icon1.svg" alt="">Home</a></li>
@@ -62,14 +59,14 @@
           </div>
         </form>
       </div>
-      <div class="header__account">
+      <div class="header__account" onclick="show_popup('login')">
         <svg viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C6.23858 0 4 2.23858 4 5C4 7.76142 6.23858 10 9 10C11.7614 10 14 7.76142 14 5C14 2.23858 11.7614 0 9 0ZM6 5C6 3.34315 7.34315 2 9 2C10.6569 2 12 3.34315 12 5C12 6.65685 10.6569 8 9 8C7.34315 8 6 6.65685 6 5Z" fill="#505154"></path>
           <path d="M2.87868 14.8787C3.44129 14.3161 4.20435 14 5 14H13C13.7956 14 14.5587 14.3161 15.1213 14.8787C15.6839 15.4413 16 16.2044 16 17V19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19V17C18 15.6739 17.4732 14.4021 16.5355 13.4645C15.5979 12.5268 14.3261 12 13 12H5C3.67392 12 2.40215 12.5268 1.46447 13.4645C0.526784 14.4021 0 15.6739 0 17V19C0 19.5523 0.447715 20 1 20C1.55228 20 2 19.5523 2 19V17C2 16.2043 2.31607 15.4413 2.87868 14.8787Z" fill="#505154"></path>
         </svg>
         <div class="header__account-title">My account</div>
       </div>
-      <div class="header__basket">
+      <div class="header__basket" onclick="show_popup('register')">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 21C7.10457 21 8 20.1046 8 19C8 17.8954 7.10457 17 6 17C4.89543 17 4 17.8954 4 19C4 20.1046 4.89543 21 6 21Z" stroke="#505154" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           <path d="M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z" stroke="#505154" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -296,13 +293,70 @@
     </div>
   </div>
 </div>
-<div class="popup-wrap" id="form">
+<div class="popup-wrap" id="login">
   <div class="popup">
-    <div class="popup__close" onclick="close_popup('form')">
-      <div></div>
-      <div></div>
+    <div class="popup__inner">
+      <div class="popup__inner-left" style="background-image: url(&quot;assets/images/png/bg-login.png&quot;);"><img src="assets/images/svg/logo.svg" alt=""></div>
+      <div class="popup__inner-right"> 
+        <div class="popup__form"> 
+          <div class="popup__form-top"> 
+            <h3 class="popup__form-title">
+               Log in</h3>
+            <div class="popup__close" onclick="close_popup('login')">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="popup__form-btn-wrap"> <a class="popup__form-btn google" href="#"><img src="assets/images/svg/google.svg" alt="">with Google </a><a class="popup__form-btn facebook" href="#"><img src="assets/images/svg/facebook.svg" alt="">with Facebook</a></div>
+          <div class="popup__form-sub-title"> <span>or log in with email</span></div>
+          <div class="inputs__field-wrap">
+            <div class="inputs__icon"><img src="assets/images/svg/mail.svg" alt=""></div>
+            <input class="inputs__field" type="text" placeholder="Your email">
+          </div>
+          <div class="inputs__field-wrap">
+            <div class="inputs__icon"><img src="assets/images/svg/key.svg" alt=""></div>
+            <input class="inputs__field" type="password" placeholder="Password">
+          </div><a class="btn btn--yellow" href="#">
+             Log in
+            <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
+            </svg></a>
+          <div class="popup__form-bottom">
+             Don’t have an account?<a href="#" onclick="close_popup('login');show_popup('register');">Register</a></div>
+        </div>
+      </div>
     </div>
-    <div class="popup__inner"></div>
+  </div>
+</div>
+<div class="popup-wrap" id="register">
+  <div class="popup">
+    <div class="popup__inner">
+      <div class="popup__inner-left" style="background-image: url(&quot;assets/images/png/bg-login-2.png&quot;);"></div>
+      <div class="popup__inner-right"> 
+        <div class="popup__form"> 
+          <div class="popup__form-top"> 
+            <h3 class="popup__form-title">
+               Registration</h3>
+            <div class="popup__close" onclick="close_popup('register')">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="popup__form-btn-wrap"> <a class="popup__form-btn google" href="#"><img src="assets/images/svg/google.svg" alt="">with Google </a><a class="popup__form-btn facebook" href="#"><img src="assets/images/svg/facebook.svg" alt="">with Facebook</a></div>
+          <div class="popup__form-sub-title"> <span>or register with email</span></div>
+          <div class="inputs__field-wrap">
+            <div class="inputs__icon"><img src="assets/images/svg/mail.svg" alt=""></div>
+            <input class="inputs__field" type="text" placeholder="Your email">
+          </div><a class="btn btn--yellow" href="#">
+             Continue with email
+            <svg viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z"></path>
+            </svg></a>
+          <div class="popup__form-bottom">
+             Already have an account?<a href="#" onclick="close_popup('register');show_popup('login');">Log in</a></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
       </div>
@@ -310,5 +364,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="js/app.js?v=1626780845247"></script></body>
+  <script type="text/javascript" src="js/app.js?v=1627898528674"></script></body>
 </html>

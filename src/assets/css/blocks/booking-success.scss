@@ -1,0 +1,62 @@
+.booking-success {
+    .simple-title {
+        margin-bottom: 4rem;
+    }
+    &__status {
+        width: 4.8rem;
+        height: 4.8rem;
+        margin-bottom: 2.4rem;
+    }
+    &__product {
+        border: 1px solid rgba(13, 13, 14, 0.16);
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding: 3.2rem;
+        width: 100%;
+        margin-bottom: 3.2rem;
+        &-title {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 130%;
+            margin-bottom: 3.2rem;
+        }
+        &-wrap {
+            display: flex;
+            .img-wrap {
+                filter: drop-shadow(2.21192px 2.21192px 11.3361px rgba(0, 0, 0, 0.12));
+                margin-right: 2.4rem;
+                max-width: 8.8rem;
+                >div {
+                    padding-bottom: 115.91%;
+                }
+            }
+        }
+        &-name {
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 150%;
+            color: #0D0D0E;
+            margin-bottom: 0.8rem;
+        }
+        &-prace {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+        }
+    }
+    &__clue {
+        display: flex;
+        align-items: center;
+        padding: 1.6rem;
+        width: 100%;
+        background: rgba(36, 122, 148, 0.1);
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 156%;
+        color: #174D5A;
+        img {
+            margin-right: 1.6rem;
+        }
+    }
+}

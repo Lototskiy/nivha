@@ -1,4 +1,5 @@
 window.show_popup = function (id) {
+	document.querySelector('body').style.overflow = 'hidden';
 	document.querySelector('#' + id).classList.add('popup-wrap--active');
 	raf(function () {
 		document.querySelector('#' + id).classList.add('popup-wrap--opacity1');
@@ -13,6 +14,7 @@ window.show_popup = function (id) {
 }
 
 window.close_popup = function (id) {
+	document.querySelector('body').style.overflow = 'auto';
 	if (document.querySelector('#' + id).classList.contains('sale-popup--2')) {
 		document.querySelector('#' + id).classList.remove('sale-popup--op1');
 

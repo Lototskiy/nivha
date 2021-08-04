@@ -6,6 +6,7 @@
 
     @media screen and (max-width:$large_tablet) {
         display: none;
+        max-width: 100%;
     }
 
     &__wrap {
