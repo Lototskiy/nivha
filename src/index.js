@@ -28,6 +28,7 @@ import './assets/css/blocks/director.scss';
 import './assets/css/blocks/aspiration.scss';
 import './assets/css/blocks/table.scss';
 import './assets/css/blocks/booking-success.scss';
+import './assets/css/blocks/product-slider.scss';
 
 
 
@@ -52,6 +53,7 @@ import './assets/css/blocks/block-travel.scss';
 
 // JS
 
+import './assets/js/product-slider';
 import './assets/js/fixed';
 import './assets/js/toogles';
 import './assets/js/popup';

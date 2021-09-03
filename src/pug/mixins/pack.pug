@@ -5,12 +5,15 @@ mixin pack(params)
                 .pack__content-title #{params.title}
                 .pack__content-price £#{params.price}
                 .content
-                    ul
-                        li #{params.item1}
-                        li #{params.item2}
-                        if params.item3 == false
-                        else
-                            li #{params.item3}
+                    if params.classText == 'text'
+                        p #{params.text} 
+                    else
+                        ul
+                            li #{params.item1}
+                            li #{params.item2}
+                            if params.item3 == false
+                            else
+                                li #{params.item3}
                 .pack__content-btn.pack__content-btn--desktop
                     a(href="#").btn.btn--empty Learn more
                     a(href="#").btn.btn--yellow #{params.btn}

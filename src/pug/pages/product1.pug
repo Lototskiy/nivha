@@ -1,0 +1,11 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Nivha-Product1';
+    - var pageClass = 'product1-page';
+
+block content
+    +main-product({})
+    //- include ../includes/main-product
+    include ../includes/business 
+//- block script
