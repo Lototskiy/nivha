@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Nivha-booking-success</title>
+    <title>Nivha-checkout</title>
     <meta name="theme-color" content="#3D4356">
     <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <link href="assets/css/app.css?v=1630678200758" rel="stylesheet"></head>
-  <body id="booking-success-page">
+  <body id="checkout-page">
     <div class="body__wrapper">
 <div class="aside">
   <div class="aside__wrap"><a class="aside__logo" href="/"> <img src="assets/images/svg/logo.svg" alt="">
@@ -79,27 +79,122 @@
   </div>
 </header>
         <main> 
-<section class="main-catalog"> 
-  <div class="center-wrap">
-    <div class="booking-success"> 
-      <div class="booking-success__status"> <img src="assets/images/svg/status-img.svg" alt=""></div>
-      <h1 class="simple-title">Great! Your test successfully booked</h1>
-      <div class="booking-success__product"> 
-        <h2 class="booking-success__product-title">Your test</h2>
-        <div class="booking-success__product-wrap"> 
-          <div class="img-wrap"> 
-            <div> <img src="assets/images/png/express-sidebar.png" alt=""></div>
-          </div>
-          <div class="booking-success__product-info"> 
-            <div class="booking-success__product-name">
-               Express PCR Test</div><span class="booking-success__product-prace">£165</span>
-          </div>
-        </div>
-      </div>
-      <div class="booking-success__clue"><img src="assets/images/svg/info-clue.svg" alt="">For further steps follow the instructions sent to your email.</div>
-    </div>
-  </div>
-</section>
+          <section class="checkout">
+            <div class="center-wrap">
+              <div class="checkout__breadcrumb">
+                <div class="breadcrumb">
+                  <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Home</a></li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Cart</a></li>
+                  </ul>
+                </div>
+              </div>
+              <h2 class="checkout__simple-title simple-title">Cart</h2>
+              <div class="checkout__table-product">
+                <div class="table-product">
+                  <div class="table-product__top">
+                    <div class="table-product__column table-product__column--left"></div>
+                    <div class="table-product__column table-product__column--product">
+                      <p class="table-product__top-title">Product</p>
+                    </div>
+                    <div class="table-product__column">
+                      <p class="table-product__top-title">Price</p>
+                    </div>
+                    <div class="table-product__column table-product__column--counter">
+                      <p class="table-product__top-title">Quantity</p>
+                    </div>
+                    <div class="table-product__column">
+                      <p class="table-product__top-title">Total</p>
+                    </div>
+                  </div>
+                  <div class="table-product__body">
+                    <div class="table-product__body-row">
+                      <div class="table-product__column table-product__column--left">
+                        <svg viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 8C7.55228 8 8 8.44771 8 9V15C8 15.5523 7.55228 16 7 16C6.44772 16 6 15.5523 6 15V9C6 8.44771 6.44772 8 7 8Z"></path>
+                          <path d="M12 9C12 8.44771 11.5523 8 11 8C10.4477 8 10 8.44771 10 9V15C10 15.5523 10.4477 16 11 16C11.5523 16 12 15.5523 12 15V9Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C6.46957 0 5.96086 0.210714 5.58579 0.585786C5.21071 0.960859 5 1.46957 5 2V4H1C0.447715 4 0 4.44772 0 5C0 5.55228 0.447715 6 1 6H1.07986L2.00034 17.0458C2.01222 17.8249 2.32686 18.5696 2.87867 19.1214C3.44128 19.684 4.20434 20.0001 4.99999 20.0001H13C13.7956 20.0001 14.5587 19.684 15.1213 19.1214C15.6731 18.5696 15.9878 17.8249 15.9996 17.0458L16.9201 6H17C17.5523 6 18 5.55228 18 5C18 4.44772 17.5523 4 17 4H13V2C13 1.46957 12.7893 0.960859 12.4142 0.585786C12.0391 0.210714 11.5304 0 11 0H7ZM11 4V2H7V4H11ZM3.08679 6L3.99654 16.917C3.99884 16.9446 3.99999 16.9723 3.99999 17.0001C3.99999 17.2653 4.10535 17.5196 4.29289 17.7072C4.48042 17.8947 4.73478 18.0001 4.99999 18.0001H13C13.2652 18.0001 13.5196 17.8947 13.7071 17.7072C13.8946 17.5196 14 17.2653 14 17.0001C14 16.9723 14.0011 16.9446 14.0034 16.917L14.9132 6H3.08679Z"></path>
+                        </svg>
+                      </div>
+                      <div class="table-product__column table-product__column--product">
+                        <div class="table-product__column-img img-wrap">
+                          <div><img src="assets/images/png/table__column-img.png" alt=""></div>
+                        </div>
+                        <p class="table-product__body-title">Return Home Test Kit</p>
+                      </div>
+                      <div class="table-product__column">
+                        <p class="table-product__body-text">£25</p>
+                      </div>
+                      <div class="table-product__column table-product__column--counter">
+                        <div class="counter">
+                          <button class="counter__btn" data-direction="minus">
+                            <svg viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect y="0.458336" width="13" height="1.08333"></rect>
+                            </svg>
+                          </button>
+                          <input class="counter__value" type="text" value="1">
+                          <button class="counter__btn" data-direction="plus">
+                            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect y="5.49961" width="12" height="1"></rect>
+                              <rect x="5.5" y="12" width="12" height="1" transform="rotate(-90 5.5 12)"></rect>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="table-product__column">
+                        <p class="table-product__body-text"><strong>£25</strong></p>
+                      </div>
+                    </div>
+                    <div class="table-product__body-row">
+                      <div class="table-product__column table-product__column--left">
+                        <svg viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 8C7.55228 8 8 8.44771 8 9V15C8 15.5523 7.55228 16 7 16C6.44772 16 6 15.5523 6 15V9C6 8.44771 6.44772 8 7 8Z"></path>
+                          <path d="M12 9C12 8.44771 11.5523 8 11 8C10.4477 8 10 8.44771 10 9V15C10 15.5523 10.4477 16 11 16C11.5523 16 12 15.5523 12 15V9Z"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C6.46957 0 5.96086 0.210714 5.58579 0.585786C5.21071 0.960859 5 1.46957 5 2V4H1C0.447715 4 0 4.44772 0 5C0 5.55228 0.447715 6 1 6H1.07986L2.00034 17.0458C2.01222 17.8249 2.32686 18.5696 2.87867 19.1214C3.44128 19.684 4.20434 20.0001 4.99999 20.0001H13C13.7956 20.0001 14.5587 19.684 15.1213 19.1214C15.6731 18.5696 15.9878 17.8249 15.9996 17.0458L16.9201 6H17C17.5523 6 18 5.55228 18 5C18 4.44772 17.5523 4 17 4H13V2C13 1.46957 12.7893 0.960859 12.4142 0.585786C12.0391 0.210714 11.5304 0 11 0H7ZM11 4V2H7V4H11ZM3.08679 6L3.99654 16.917C3.99884 16.9446 3.99999 16.9723 3.99999 17.0001C3.99999 17.2653 4.10535 17.5196 4.29289 17.7072C4.48042 17.8947 4.73478 18.0001 4.99999 18.0001H13C13.2652 18.0001 13.5196 17.8947 13.7071 17.7072C13.8946 17.5196 14 17.2653 14 17.0001C14 16.9723 14.0011 16.9446 14.0034 16.917L14.9132 6H3.08679Z"></path>
+                        </svg>
+                      </div>
+                      <div class="table-product__column table-product__column--product">
+                        <div class="table-product__column-img img-wrap">
+                          <div><img src="assets/images/png/table__column-img.png" alt=""></div>
+                        </div>
+                        <p class="table-product__body-title">Next Generation Test Type</p>
+                      </div>
+                      <div class="table-product__column">
+                        <p class="table-product__body-text">£30</p>
+                      </div>
+                      <div class="table-product__column table-product__column--counter">
+                        <div class="counter">
+                          <button class="counter__btn" data-direction="minus">
+                            <svg viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect y="0.458336" width="13" height="1.08333"></rect>
+                            </svg>
+                          </button>
+                          <input class="counter__value" type="text" value="1">
+                          <button class="counter__btn" data-direction="plus">
+                            <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect y="5.49961" width="12" height="1"></rect>
+                              <rect x="5.5" y="12" width="12" height="1" transform="rotate(-90 5.5 12)"></rect>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="table-product__column">
+                        <p class="table-product__body-text"><strong>£60</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__btn">
+                  <div class="btn btn--empty">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.95147 0.57408C7.30178 0.361217 5.62787 0.696658 4.18758 1.52873C3.41477 1.97519 2.73223 2.55134 2.16677 3.22665V2.16593C2.16677 1.7057 1.79367 1.3326 1.33344 1.3326C0.873198 1.3326 0.500102 1.7057 0.500102 2.16593V5.49927C0.500102 5.95951 0.873198 6.3326 1.33344 6.3326H1.73079C1.74346 6.33289 1.75612 6.33289 1.76874 6.3326H4.66677C5.12701 6.3326 5.5001 5.95951 5.5001 5.49927C5.5001 5.03903 5.12701 4.66594 4.66677 4.66594H3.15939C3.64841 3.97836 4.2819 3.39904 5.0213 2.97188C6.14504 2.32268 7.45107 2.06096 8.73819 2.22704C10.0253 2.39312 11.2221 2.97779 12.1443 3.89097C13.0664 4.80416 13.6627 5.99521 13.8414 7.28064C13.9047 7.7365 14.3256 8.05469 14.7815 7.99134C15.2373 7.92798 15.5555 7.50708 15.4922 7.05123C15.2632 5.4037 14.4989 3.87714 13.317 2.70672C12.1351 1.5363 10.6012 0.786944 8.95147 0.57408ZM2.15884 8.71824C2.09549 8.26238 1.67458 7.9442 1.21873 8.00755C0.762872 8.0709 0.444684 8.4918 0.508035 8.94765C0.736994 10.5952 1.50129 12.1217 2.6832 13.2922C3.8651 14.4626 5.39905 15.2119 7.04874 15.4248C8.69843 15.6377 10.3723 15.3022 11.8126 14.4702C12.5854 14.0237 13.268 13.4475 13.8334 12.7722V13.8329C13.8334 14.2932 14.2065 14.6663 14.6668 14.6663C15.127 14.6663 15.5001 14.2932 15.5001 13.8329V10.4996C15.5001 10.0394 15.127 9.66628 14.6668 9.66628H14.2694C14.2567 9.66599 14.2441 9.66599 14.2315 9.66628H11.3334C10.8732 9.66628 10.5001 10.0394 10.5001 10.4996C10.5001 10.9599 10.8732 11.3329 11.3334 11.3329H12.8408C12.3518 12.0205 11.7183 12.5998 10.9789 13.027C9.85517 13.6762 8.54914 13.9379 7.26202 13.7718C5.9749 13.6058 4.77809 13.0211 3.85594 12.1079C2.9338 11.1947 2.33748 10.0037 2.15884 8.71824Z" fill="#282829"></path>
+                    </svg>Update cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar"></div>
+          </section>
         </main>
 <footer class="footer">
   <div class="center-wrap">

@@ -11,7 +11,7 @@ if (document.querySelector('.product-slider')) {
         thumbs: {
             swiper: {
                 el: '.product-slider__mini .swiper-container',
-                spaceBetween: 4,
+                spaceBetween: 32,
                 slidesPerView: 4,
                 speed: 1000,
                 // breakpoints: {

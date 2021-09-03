@@ -29,11 +29,14 @@ import './assets/css/blocks/aspiration.scss';
 import './assets/css/blocks/table.scss';
 import './assets/css/blocks/booking-success.scss';
 import './assets/css/blocks/product-slider.scss';
+import './assets/css/blocks/counter.scss';
+import './assets/css/blocks/table-product.scss';
 
 
 
 
 
+import './assets/css/blocks/checkout.scss';
 import './assets/css/blocks/pack.scss';
 import './assets/css/blocks/content.scss';
 
@@ -53,6 +56,7 @@ import './assets/css/blocks/block-travel.scss';
 
 // JS
 
+import './assets/js/counter';
 import './assets/js/product-slider';
 import './assets/js/fixed';
 import './assets/js/toogles';

@@ -1,0 +1,53 @@
+.counter {
+    display: flex;
+    align-items: center;
+    height: 4.8rem;
+    width: 100%;
+    background: rgba(0, 22, 2, 0.04);
+    border-radius: 8px;
+    overflow: hidden;
+
+    // @media screen and (max-width:$large_tablet) {
+    //     max-width: 15rem;
+    //     height: 6.4rem;
+    // }
+
+    &__value {
+        width: 50%;
+        height: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #001602;
+        background-color: inherit;
+    }
+
+    &__btn {
+        cursor: pointer;
+        height: 100%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        transition: all 0.5s;
+        border: none;
+        background-color: inherit;
+
+        svg {
+            fill: #001602;
+            width: 1.6rem;
+            transition: fill .5s, transform .5s;
+            will-change: transform;
+        }
+
+        &:hover {
+            svg {
+                transform: scale(0.8);
+            }
+        }
+    }
+}
