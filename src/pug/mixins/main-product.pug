@@ -19,41 +19,39 @@ mixin main-product(params)
                                     .swiper-wrapper
                                         .swiper-slide
                                             .product-slider__big-item
-                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
-                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                                                a(href="assets/images/png/product-slider--small1.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                                         .swiper-slide
                                             .product-slider__big-item
-                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
-                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                                                a(href="assets/images/png/product-slider--small1.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                                         .swiper-slide
                                             .product-slider__big-item
-                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
-                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                                                a(href="assets/images/png/product-slider--small1.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                                         .swiper-slide
                                             .product-slider__big-item
-                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
-                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                                                a(href="assets/images/png/product-slider--small1.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                             .product-slider__mini
                                 .swiper-container
                                     .swiper-wrapper
                                         .swiper-slide
                                             .product-slider__mini-img.img-wrap
                                                 div
-                                                    img(src="assets/images/png/car__img--small1.png" alt="")
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                                         .swiper-slide
                                             .product-slider__mini-img.img-wrap
                                                 div
-                                                    img(src="assets/images/png/car__img--small1.png" alt="")
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                                         .swiper-slide
                                             .product-slider__mini-img.img-wrap
                                                 div
-                                                    img(src="assets/images/png/car__img--small1.png" alt="")
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                                         .swiper-slide
                                             .product-slider__mini-img.img-wrap
                                                 div
-                                                    img(src="assets/images/png/car__img--small1.png" alt="")
-
-
+                                                    img(src="assets/images/png/product-slider--small1.png" alt="")
                 h1.simple-title.mobil__on
                     |Express PCR Test
                 .content 
@@ -68,4 +66,7 @@ mixin main-product(params)
 
             include ../includes/table
             include ../includes/test-info
-        include ../includes/sidebar
+        if params.product == 'product'
+            include ../includes/sidebar
+        else
+            include ../includes/sidebar1

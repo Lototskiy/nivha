@@ -4,8 +4,19 @@
             .sidebar__price 
                 h3.sidebar-title 
                     |Price
-                .sidebar__price-price
-                    |£<span>165</span>
+                .sidebar__price-top
+                    .sidebar__price-price
+                        |£<span>25</span>
+                    .sidebar__price-counter 
+                        .counter
+                            button.counter__btn(data-direction='minus')
+                                svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    rect(y='0.458336' width='13' height='1.08333')
+                            input.counter__value(type='text' value='1')
+                            button.counter__btn(data-direction='plus')
+                                svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    rect(y='5.49961' width='12' height='1')
+                                    rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
                 a(href="#").btn.btn--yellow
                     |Book test 
                     svg(viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg')
