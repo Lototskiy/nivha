@@ -1,0 +1,71 @@
+mixin main-product(params)
+    section.main-product#main-product
+        .center-wrap
+            .breadcrumb
+                .breadcrumb__list
+                    +breadcrumb([{href:'/',text:'Home'},{href:'/catalog.html',text:'for Individuals'},{href:'#',text:'Express PCR Test'}])
+            h1.simple-title.mobil__none
+                |Express PCR Test
+            .block-info
+                .block-info__left
+                    if params.imgSlider == 'img'
+                        .img-wrap
+                            div 
+                                img(src="assets/images/png/img-block-1.png" alt="")
+                    else 
+                        .product-slider
+                            .product-slider__big
+                                .swiper-container
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .product-slider__big-item
+                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                                        .swiper-slide
+                                            .product-slider__big-item
+                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                                        .swiper-slide
+                                            .product-slider__big-item
+                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                                        .swiper-slide
+                                            .product-slider__big-item
+                                                a(href="assets/images/png/car__img--big.png" data-fancybox="car-gallery").product-slider__big-img
+                                                    img(src="assets/images/png/car__img--big.png" alt="")
+                            .product-slider__mini
+                                .swiper-container
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .product-slider__mini-img.img-wrap
+                                                div
+                                                    img(src="assets/images/png/car__img--small1.png" alt="")
+                                        .swiper-slide
+                                            .product-slider__mini-img.img-wrap
+                                                div
+                                                    img(src="assets/images/png/car__img--small1.png" alt="")
+                                        .swiper-slide
+                                            .product-slider__mini-img.img-wrap
+                                                div
+                                                    img(src="assets/images/png/car__img--small1.png" alt="")
+                                        .swiper-slide
+                                            .product-slider__mini-img.img-wrap
+                                                div
+                                                    img(src="assets/images/png/car__img--small1.png" alt="")
+
+
+                h1.simple-title.mobil__on
+                    |Express PCR Test
+                .content 
+                    p|With an accuracy of 99%, the polymerase chain reaction (PCR) test is a nucleic acid test which can tell you if you currently have COVID-19. Testing a is conducted using a using a nose and throat (nasopharyngeal) swab with your sample then sent back to the RCLS ISO 17025 accredited lab (ID 9329) in Northern Ireland. This test provides you with the appropriate certification for travel to countries requiring a PCR test for entry.
+                    ul
+                        li
+                            |Results within 24 hours
+                        li
+                            |Best price in Belfast
+                        li
+                            |Gentle nasal swab
+
+            include ../includes/table
+            include ../includes/test-info
+        include ../includes/sidebar

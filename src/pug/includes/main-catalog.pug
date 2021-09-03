@@ -2,8 +2,7 @@ section.main-catalog
     .center-wrap
         .breadcrumb
             .breadcrumb__list
-                +breadcrumb( {src: 'index.html', name: 'Home'})
-                +breadcrumb( {src: 'catalog.html', name: 'for Individuals'})
+                +breadcrumb([{href:'/',text:'Home'},{href:'#',text:'for Individuals'}])
         h1.simple-title
             |Diagnostics of the COVID-19 for individuals
         .content.sub-title 
@@ -40,4 +39,3 @@ section.main-catalog
                 +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Private PCR', subTitle: 'Swab • 1 day', price: '65'})
                 +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Private Antigen', subTitle: 'Deoxygenated blood • 1 day', price: '35'})
                 +travelCards({class: '', src: 'assets/images/png/cards-img-1.png', title: 'Private Antibody (by appointment)', subTitle: 'Deoxygenated blood • 1 day', price: '45'})
-        
