@@ -1,74 +1,149 @@
-section.checkout
+section.cart.cart--checkout
     .center-wrap
-        .checkout__breadcrumb
-            +breadcrumb([{href:'/',text:'Home'},{href:'#',text:'Cart'}])
-        h2.checkout__simple-title.simple-title Cart
-        .checkout__table-product
-            .table-product
-                .table-product__top
-                    .table-product__column.table-product__column--left
-                    .table-product__column.table-product__column--product
-                        p.table-product__top-title Product
-                    .table-product__column
-                        p.table-product__top-title Price
-                    .table-product__column.table-product__column--counter
-                        p.table-product__top-title Quantity
-                    .table-product__column
-                        p.table-product__top-title Total
-                .table-product__body
-                    .table-product__body-row
-                        .table-product__column.table-product__column--left
-                            svg(viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                path(d='M7 8C7.55228 8 8 8.44771 8 9V15C8 15.5523 7.55228 16 7 16C6.44772 16 6 15.5523 6 15V9C6 8.44771 6.44772 8 7 8Z')
-                                path(d='M12 9C12 8.44771 11.5523 8 11 8C10.4477 8 10 8.44771 10 9V15C10 15.5523 10.4477 16 11 16C11.5523 16 12 15.5523 12 15V9Z')
-                                path(fill-rule='evenodd' clip-rule='evenodd' d='M7 0C6.46957 0 5.96086 0.210714 5.58579 0.585786C5.21071 0.960859 5 1.46957 5 2V4H1C0.447715 4 0 4.44772 0 5C0 5.55228 0.447715 6 1 6H1.07986L2.00034 17.0458C2.01222 17.8249 2.32686 18.5696 2.87867 19.1214C3.44128 19.684 4.20434 20.0001 4.99999 20.0001H13C13.7956 20.0001 14.5587 19.684 15.1213 19.1214C15.6731 18.5696 15.9878 17.8249 15.9996 17.0458L16.9201 6H17C17.5523 6 18 5.55228 18 5C18 4.44772 17.5523 4 17 4H13V2C13 1.46957 12.7893 0.960859 12.4142 0.585786C12.0391 0.210714 11.5304 0 11 0H7ZM11 4V2H7V4H11ZM3.08679 6L3.99654 16.917C3.99884 16.9446 3.99999 16.9723 3.99999 17.0001C3.99999 17.2653 4.10535 17.5196 4.29289 17.7072C4.48042 17.8947 4.73478 18.0001 4.99999 18.0001H13C13.2652 18.0001 13.5196 17.8947 13.7071 17.7072C13.8946 17.5196 14 17.2653 14 17.0001C14 16.9723 14.0011 16.9446 14.0034 16.917L14.9132 6H3.08679Z')
-                        .table-product__column.table-product__column--product
-                            .table-product__column-img.img-wrap
-                                div
-                                    img(src="assets/images/png/table__column-img.png" alt="")
-                            p.table-product__body-title Return Home Test Kit
-                        .table-product__column
-                            p.table-product__body-text £25
-                        .table-product__column.table-product__column--counter
-                            .counter
-                                button.counter__btn(data-direction='minus')
-                                    svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                        rect(y='0.458336' width='13' height='1.08333')
-                                input.counter__value(type='text' value='1')
-                                button.counter__btn(data-direction='plus')
-                                    svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                        rect(y='5.49961' width='12' height='1')
-                                        rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
-                        .table-product__column
-                            p.table-product__body-text <strong>£25</strong>
-                    .table-product__body-row
-                        .table-product__column.table-product__column--left
-                            svg(viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                path(d='M7 8C7.55228 8 8 8.44771 8 9V15C8 15.5523 7.55228 16 7 16C6.44772 16 6 15.5523 6 15V9C6 8.44771 6.44772 8 7 8Z')
-                                path(d='M12 9C12 8.44771 11.5523 8 11 8C10.4477 8 10 8.44771 10 9V15C10 15.5523 10.4477 16 11 16C11.5523 16 12 15.5523 12 15V9Z')
-                                path(fill-rule='evenodd' clip-rule='evenodd' d='M7 0C6.46957 0 5.96086 0.210714 5.58579 0.585786C5.21071 0.960859 5 1.46957 5 2V4H1C0.447715 4 0 4.44772 0 5C0 5.55228 0.447715 6 1 6H1.07986L2.00034 17.0458C2.01222 17.8249 2.32686 18.5696 2.87867 19.1214C3.44128 19.684 4.20434 20.0001 4.99999 20.0001H13C13.7956 20.0001 14.5587 19.684 15.1213 19.1214C15.6731 18.5696 15.9878 17.8249 15.9996 17.0458L16.9201 6H17C17.5523 6 18 5.55228 18 5C18 4.44772 17.5523 4 17 4H13V2C13 1.46957 12.7893 0.960859 12.4142 0.585786C12.0391 0.210714 11.5304 0 11 0H7ZM11 4V2H7V4H11ZM3.08679 6L3.99654 16.917C3.99884 16.9446 3.99999 16.9723 3.99999 17.0001C3.99999 17.2653 4.10535 17.5196 4.29289 17.7072C4.48042 17.8947 4.73478 18.0001 4.99999 18.0001H13C13.2652 18.0001 13.5196 17.8947 13.7071 17.7072C13.8946 17.5196 14 17.2653 14 17.0001C14 16.9723 14.0011 16.9446 14.0034 16.917L14.9132 6H3.08679Z')
-                        .table-product__column.table-product__column--product
-                            .table-product__column-img.img-wrap
-                                div
-                                    img(src="assets/images/png/table__column-img.png" alt="")
-                            p.table-product__body-title Next Generation Test Type
-                        .table-product__column
-                            p.table-product__body-text £30
-                        .table-product__column.table-product__column--counter
-                            .counter
-                                button.counter__btn(data-direction='minus')
-                                    svg(viewBox='0 0 13 2' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                        rect(y='0.458336' width='13' height='1.08333')
-                                input.counter__value(type='text' value='1')
-                                button.counter__btn(data-direction='plus')
-                                    svg(viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                        rect(y='5.49961' width='12' height='1')
-                                        rect(x='5.5' y='12' width='12' height='1' transform='rotate(-90 5.5 12)')
-                        .table-product__column
-                            p.table-product__body-text <strong>£60</strong>
-            .checkout__btn
-                .btn.btn--empty
-                    svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
-                        path(fill-rule='evenodd' clip-rule='evenodd' d='M8.95147 0.57408C7.30178 0.361217 5.62787 0.696658 4.18758 1.52873C3.41477 1.97519 2.73223 2.55134 2.16677 3.22665V2.16593C2.16677 1.7057 1.79367 1.3326 1.33344 1.3326C0.873198 1.3326 0.500102 1.7057 0.500102 2.16593V5.49927C0.500102 5.95951 0.873198 6.3326 1.33344 6.3326H1.73079C1.74346 6.33289 1.75612 6.33289 1.76874 6.3326H4.66677C5.12701 6.3326 5.5001 5.95951 5.5001 5.49927C5.5001 5.03903 5.12701 4.66594 4.66677 4.66594H3.15939C3.64841 3.97836 4.2819 3.39904 5.0213 2.97188C6.14504 2.32268 7.45107 2.06096 8.73819 2.22704C10.0253 2.39312 11.2221 2.97779 12.1443 3.89097C13.0664 4.80416 13.6627 5.99521 13.8414 7.28064C13.9047 7.7365 14.3256 8.05469 14.7815 7.99134C15.2373 7.92798 15.5555 7.50708 15.4922 7.05123C15.2632 5.4037 14.4989 3.87714 13.317 2.70672C12.1351 1.5363 10.6012 0.786944 8.95147 0.57408ZM2.15884 8.71824C2.09549 8.26238 1.67458 7.9442 1.21873 8.00755C0.762872 8.0709 0.444684 8.4918 0.508035 8.94765C0.736994 10.5952 1.50129 12.1217 2.6832 13.2922C3.8651 14.4626 5.39905 15.2119 7.04874 15.4248C8.69843 15.6377 10.3723 15.3022 11.8126 14.4702C12.5854 14.0237 13.268 13.4475 13.8334 12.7722V13.8329C13.8334 14.2932 14.2065 14.6663 14.6668 14.6663C15.127 14.6663 15.5001 14.2932 15.5001 13.8329V10.4996C15.5001 10.0394 15.127 9.66628 14.6668 9.66628H14.2694C14.2567 9.66599 14.2441 9.66599 14.2315 9.66628H11.3334C10.8732 9.66628 10.5001 10.0394 10.5001 10.4996C10.5001 10.9599 10.8732 11.3329 11.3334 11.3329H12.8408C12.3518 12.0205 11.7183 12.5998 10.9789 13.027C9.85517 13.6762 8.54914 13.9379 7.26202 13.7718C5.9749 13.6058 4.77809 13.0211 3.85594 12.1079C2.9338 11.1947 2.33748 10.0037 2.15884 8.71824Z' fill='#282829')
-                    | Update cart
+        .cart__breadcrumb
+            +breadcrumb([{href:'/',text:'Home'},{href:'#',text:'Checkout'}])
+        h2.cart__simple-title.simple-title Checkout
+        .checkout__body 
+            .checkout__box
+                .checkout__body-title Contact information
+                form.checkout__inputs.inputs(action='' autocomplete="off")
+                    .inputs__field-row
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            input.inputs__field.inputs__field--icon(type='text' id='text' name='text' autocomplete='off' required='' minlength='2')
+                            label.inputs__label(for='text')
+                                span.inputs__icon
+                                    svg(viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(fill-rule='evenodd' clip-rule='evenodd' d='M8 0.666016C5.69881 0.666016 3.83333 2.5315 3.83333 4.83268C3.83333 7.13387 5.69881 8.99935 8 8.99935C10.3012 8.99935 12.1667 7.13387 12.1667 4.83268C12.1667 2.5315 10.3012 0.666016 8 0.666016ZM5.5 4.83268C5.5 3.45197 6.61929 2.33268 8 2.33268C9.38071 2.33268 10.5 3.45197 10.5 4.83268C10.5 6.21339 9.38071 7.33268 8 7.33268C6.61929 7.33268 5.5 6.21339 5.5 4.83268Z')
+                                        path(d='M2.8989 13.0649C3.36774 12.5961 4.00363 12.3327 4.66667 12.3327H11.3333C11.9964 12.3327 12.6323 12.5961 13.1011 13.0649C13.5699 13.5338 13.8333 14.1696 13.8333 14.8327V16.4993C13.8333 16.9596 14.2064 17.3327 14.6667 17.3327C15.1269 17.3327 15.5 16.9596 15.5 16.4993V14.8327C15.5 13.7276 15.061 12.6678 14.2796 11.8864C13.4982 11.105 12.4384 10.666 11.3333 10.666H4.66667C3.5616 10.666 2.50179 11.105 1.72039 11.8864C0.938987 12.6678 0.5 13.7276 0.5 14.8327V16.4993C0.5 16.9596 0.873096 17.3327 1.33333 17.3327C1.79357 17.3327 2.16667 16.9596 2.16667 16.4993V14.8327C2.16667 14.1696 2.43006 13.5338 2.8989 13.0649Z')
+                                span.inputs__content
+                                    | First name
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            input.inputs__field.inputs__field--icon(type='text' id='text' name='text' autocomplete='off' required='' minlength='2')
+                            label.inputs__label(for='text')
+                                span.inputs__icon
+                                    svg(viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(fill-rule='evenodd' clip-rule='evenodd' d='M8 0.666016C5.69881 0.666016 3.83333 2.5315 3.83333 4.83268C3.83333 7.13387 5.69881 8.99935 8 8.99935C10.3012 8.99935 12.1667 7.13387 12.1667 4.83268C12.1667 2.5315 10.3012 0.666016 8 0.666016ZM5.5 4.83268C5.5 3.45197 6.61929 2.33268 8 2.33268C9.38071 2.33268 10.5 3.45197 10.5 4.83268C10.5 6.21339 9.38071 7.33268 8 7.33268C6.61929 7.33268 5.5 6.21339 5.5 4.83268Z')
+                                        path(d='M2.8989 13.0649C3.36774 12.5961 4.00363 12.3327 4.66667 12.3327H11.3333C11.9964 12.3327 12.6323 12.5961 13.1011 13.0649C13.5699 13.5338 13.8333 14.1696 13.8333 14.8327V16.4993C13.8333 16.9596 14.2064 17.3327 14.6667 17.3327C15.1269 17.3327 15.5 16.9596 15.5 16.4993V14.8327C15.5 13.7276 15.061 12.6678 14.2796 11.8864C13.4982 11.105 12.4384 10.666 11.3333 10.666H4.66667C3.5616 10.666 2.50179 11.105 1.72039 11.8864C0.938987 12.6678 0.5 13.7276 0.5 14.8327V16.4993C0.5 16.9596 0.873096 17.3327 1.33333 17.3327C1.79357 17.3327 2.16667 16.9596 2.16667 16.4993V14.8327C2.16667 14.1696 2.43006 13.5338 2.8989 13.0649Z')
+                                span.inputs__content
+                                    | Last name
+                    .inputs__field-row   
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            input.inputs__field.inputs__field--icon(type='email' id='email' name='email' autocomplete='off' required='' )
+                            label.inputs__label(for='email')
+                                span.inputs__icon.inputs__icon--size
+                                    svg(viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(fill-rule='evenodd' clip-rule='evenodd' d='M12.4136 2.01432C10.6997 1.49576 8.86437 1.54305 7.17943 2.1492C5.4945 2.75534 4.04963 3.8881 3.05885 5.37967C2.06807 6.87124 1.5841 8.64228 1.67861 10.4304C1.77313 12.2186 2.44112 13.9287 3.58362 15.3075C4.72611 16.6863 6.28235 17.6605 8.0218 18.0856C9.76124 18.5108 11.5914 18.3643 13.2411 17.6679C13.6651 17.489 13.8637 17.0001 13.6847 16.5761C13.5057 16.1521 13.0169 15.9535 12.5929 16.1325C11.2732 16.6896 9.80906 16.8067 8.41751 16.4666C7.02595 16.1265 5.78096 15.3472 4.86696 14.2441C3.95296 13.1411 3.41857 11.773 3.34296 10.3425C3.26734 8.91194 3.65452 7.49511 4.44714 6.30185C5.23977 5.1086 6.39567 4.20239 7.74361 3.71747C9.09156 3.23255 10.5599 3.19472 11.931 3.60957C13.3021 4.02443 14.5032 4.8699 15.3562 6.02075C16.2092 7.1716 16.6688 8.56661 16.667 9.99913V11.2502C16.667 11.5817 16.5353 11.8997 16.3009 12.1341C16.0665 12.3685 15.7485 12.5002 15.417 12.5002C15.0855 12.5002 14.7675 12.3685 14.5331 12.1341C14.2987 11.8997 14.167 11.5817 14.167 11.2502L14.167 10.0001C14.167 7.69894 12.3015 5.83346 10.0003 5.83346C7.69914 5.83346 5.83366 7.69894 5.83366 10.0001C5.83366 12.3013 7.69914 14.1668 10.0003 14.1668C11.1802 14.1668 12.2456 13.6763 13.0037 12.8882C13.1063 13.0393 13.2236 13.1816 13.3546 13.3126C13.9016 13.8596 14.6434 14.1669 15.417 14.1669C16.1905 14.1669 16.9324 13.8596 17.4794 13.3126C18.0264 12.7656 18.3337 12.0237 18.3337 11.2502V10.0013C18.336 8.21062 17.7614 6.46686 16.6951 5.0283C15.6289 3.58974 14.1276 2.53289 12.4136 2.01432ZM7.50033 10.0001C7.50033 8.61941 8.61961 7.50012 10.0003 7.50012C11.381 7.50012 12.5003 8.61941 12.5003 10.0001C12.5003 11.3808 11.381 12.5001 10.0003 12.5001C8.61961 12.5001 7.50033 11.3808 7.50033 10.0001Z')
+                                span.inputs__content
+                                    | E-mail
+
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            input.inputs__field.inputs__field--icon(type='number' id='number' name='text2' autocomplete='off' required='' )
+                            label.inputs__label(for='number')
+                                span.inputs__icon.inputs__icon--size   
+                                    svg(viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(fill-rule='evenodd' clip-rule='evenodd' d='M4.16699 4.16667C3.94598 4.16667 3.73402 4.25446 3.57774 4.41074C3.4265 4.56198 3.33939 4.76537 3.33393 4.97864C3.52559 8.01525 4.81832 10.8781 6.97027 13.0301C9.12223 15.182 11.9851 16.4747 15.0217 16.6664C15.235 16.6609 15.4383 16.5738 15.5896 16.4226C15.7459 16.2663 15.8337 16.0543 15.8337 15.8333V13.0642L12.8498 11.8706L11.9649 13.3454C11.7418 13.7173 11.2707 13.8559 10.8817 13.6641C8.90761 12.6905 7.30987 11.0927 6.33628 9.1186C6.14445 8.72963 6.28302 8.25856 6.65491 8.03542L8.12969 7.15056L6.93613 4.16667H4.16699ZM2.39923 3.23223C2.86807 2.76339 3.50395 2.5 4.16699 2.5H7.50033C7.84108 2.5 8.1475 2.70746 8.27406 3.02384L9.94072 7.19051C10.0926 7.57027 9.94647 8.00414 9.59574 8.21458L8.20074 9.05158C8.88729 10.1713 9.82906 11.113 10.9487 11.7996L11.7857 10.4046C11.9962 10.0539 12.4301 9.9077 12.8098 10.0596L16.9765 11.7263C17.2929 11.8528 17.5003 12.1592 17.5003 12.5V15.8333C17.5003 16.4964 17.2369 17.1323 16.7681 17.6011C16.2993 18.0699 15.6634 18.3333 15.0003 18.3333C14.9835 18.3333 14.9666 18.3328 14.9498 18.3318C11.496 18.1219 8.23845 16.6553 5.79176 14.2086C3.34507 11.7619 1.87841 8.50433 1.66853 5.05055C1.6675 5.03372 1.66699 5.01686 1.66699 5C1.66699 4.33696 1.93038 3.70107 2.39923 3.23223Z')
+                                span.inputs__content
+                                    | Phone
+            .checkout__box
+                .checkout__body-title Shipping address
+                form.checkout__inputs.inputs(action='' autocomplete="off")
+                    .inputs__field-row
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            span.select_placeholder
+                            select.select__field
+                                option(value="placeholder" disabled selected hidden)
+                                    |Country
+                                option(value="val1") 
+                                    |United Kingdom
+                                option(value="val2") 
+                                    |United Kingdom2
+                                option(value="val3") 
+                                    |United Kingdom3
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            input.inputs__field(type='text' id='text' name='text' autocomplete='off' required='' minlength='2')
+                            label.inputs__label(for='text')
+                                span.inputs__content
+                                    | City
+                    .inputs__field-row
+                        .inputs__field-wrap.inputs__field-wrap--50
+                            input.inputs__field(type='text' id='text' name='text' autocomplete='off' required='' minlength='2')
+                            label.inputs__label(for='text')
+                                span.inputs__content
+                                    | Address
+                        .inputs__field-wrap.inputs__field-wrap--25
+                            input.inputs__field(type='text' id='text' name='text' autocomplete='off' required='' minlength='2')
+                            label.inputs__label(for='text')
+                                span.inputs__content
+                                    | Apartment, suite, etc.
+                        .inputs__field-wrap.inputs__field-wrap--25
+                            input.inputs__field(type='text' id='text' name='text' autocomplete='off' required='' minlength='2')
+                            label.inputs__label(for='text')
+                                span.inputs__content
+                                    | Postal code
+                .checkout__radio.radio
+                    .checkout__radio-title Shipping method
+                    label.radio__label(for='radio1')
+                        input.radio__input(type='radio' id='radio1' name='radio-delivery' checked)
+                        span.radio__content
+                        | Royal Mail Express: £28
+                    label.radio__label(for='radio2')
+                        input.radio__input(id='radio2' type='radio' name='radio-delivery')
+                        span.radio__content
+                        | Royal Mail Standard: £17
+                    label.radio__label(for='radio3')
+                        input.radio__input(id='radio3' type='radio' name='radio-delivery')
+                        span.radio__content
+                        | Royal Mail Economy: £8 
+            .checkout__box
+                .checkout__body-title Payment
+                .checkout__body-content.content 
+                    p All transactions are secure and encrypted.
+                .radio
+                    label.radio__label(for='chek')
+                        input.radio__input(type='checkbox' id='chek' name='checkbox' checked)
+                        span.radio__content
+                        | Royal Mail Express: £28
+                .checkout__box-row 
+                    .img-wrap
+                        div
+                            img(src="assets/images/svg/checkout-img.svg" alt="")
+                    .content 
+                        p After clicking “Place order”, you will be redirected to Stripe to complete your purchase securely.
     .sidebar
+        .sidebar__wrap
+            .sidebar__price
+                .cart-sidebar
+                    .cart-sidebar__header
+                        .cart-sidebar__title Order summary
+                    .cart-sidebar__box
+                        .cart-sidebar__row
+                            a(href="/product1.html").table-product__column
+                                .table-product__column-img.img-wrap
+                                    div
+                                        img(src="assets/images/png/table__column-img.png" alt="")
+                                    span 1
+                                p.table-product__body-title Return Home Test Kit
+                            .cart-sidebar__row-value £25
+                        .cart-sidebar__row 
+                            a(href="/product1.html").table-product__column
+                                .table-product__column-img.img-wrap
+                                    div
+                                        img(src="assets/images/png/table__column-img.png" alt="")
+                                    span 2
+                                p.table-product__body-title Next Generation Test Type
+                            .cart-sidebar__row-value £60
+                    .cart-sidebar__box
+                        .cart-sidebar__row 
+                            .cart-sidebar__row-title Subtotal
+                            .cart-sidebar__row-value £85
+                        .cart-sidebar__row 
+                            .cart-sidebar__row-title Shipping
+                            .cart-sidebar__row-value £17
+                    .cart-sidebar__row.cart-sidebar__row--fw
+                        .cart-sidebar__title Total
+                        .cart-sidebar__row-value £102
+                    a(href="#").cart-sidebar__btn.btn.btn--yellow
+                        |Place order  
+                        svg(viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0.875 2.19132C0.875 1.22907 1.91667 0.627661 2.75 1.10879L7.75 3.99554C8.58333 4.47666 8.58333 5.67948 7.75 6.1606L2.75 9.04735C1.91667 9.52848 0.875 8.92707 0.875 7.96482L0.875 2.19132Z')  
+

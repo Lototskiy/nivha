@@ -40,6 +40,27 @@
             max-width: 4.8rem;
             width: 100%;
             margin-right: 1.6rem;
+            border: 1px solid #D9D9DA;
+            border-radius: 4px;
+            position: relative;
+
+            span {
+                bottom: calc(100% - 1.1rem);
+                left: calc(100% - 1.1rem);
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.2rem;
+                height: 2.2rem;
+                border-radius: 50%;
+                background: #8E8E8F;
+                font-weight: bold;
+                font-size: 1.4rem;
+                line-height: 1;
+                color: #FFFFFF;
+            }
+
         }
 
         &--left {
@@ -53,6 +74,12 @@
             display: flex;
             align-items: center;
             margin-right: auto;
+
+            &:hover {
+                .table-product__body-title {
+                    opacity: 0.5;
+                }
+            }
         }
 
         &--counter {
@@ -100,6 +127,7 @@
             font-size: 1.6rem;
             line-height: 150%;
             color: #001602;
+            transition: opacity .5s;
         }
 
     }

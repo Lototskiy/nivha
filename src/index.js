@@ -31,11 +31,13 @@ import './assets/css/blocks/booking-success.scss';
 import './assets/css/blocks/product-slider.scss';
 import './assets/css/blocks/counter.scss';
 import './assets/css/blocks/table-product.scss';
+import './assets/css/blocks/radio.scss';
 
 
 
 
 
+import './assets/css/blocks/cart.scss';
 import './assets/css/blocks/checkout.scss';
 import './assets/css/blocks/pack.scss';
 import './assets/css/blocks/content.scss';
@@ -50,6 +52,7 @@ import './assets/css/blocks/contact.scss';
 import './assets/css/blocks/confidence.scss';
 import './assets/css/blocks/faq.scss';
 import './assets/css/blocks/block-travel.scss';
+import './assets/css/blocks/thanks.scss';
 
 
 
