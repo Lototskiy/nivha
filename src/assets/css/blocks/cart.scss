@@ -1,0 +1,129 @@
+.cart {
+    display: flex;
+    padding-top: 4.8rem;
+
+    &--checkout {
+        .cart-sidebar__row {
+            margin-bottom: 2rem;
+
+            &+.cart-sidebar__row {
+                border: none;
+                padding-top: 0;
+            }
+        }
+
+        .cart-sidebar__box {
+            padding-bottom: 1.6rem;
+            border-bottom: 1px solid rgba(13, 13, 14, 0.08);
+        }
+    }
+
+    .center-wrap {
+        margin: 0rem 4.8rem;
+    }
+
+    &__breadcrumb {
+        margin-bottom: 2.5rem;
+    }
+
+    &__simple-title {
+        margin-bottom: 4rem;
+    }
+
+    &__btn {
+        text-align: right;
+
+        .btn--empty {
+            line-height: 5.6rem;
+            padding: 0 2.4rem;
+            font-weight: 600;
+            font-size: 1.6rem;
+            margin-top: 1.6rem;
+
+        }
+    }
+
+    &-sidebar {
+        &__header {
+            margin-bottom: 3.5rem;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 24/20*1;
+        }
+
+        &__box {
+            margin-bottom: 1.6rem;
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 110%;
+            margin-bottom: 1.6rem;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            &+.cart-sidebar__row {
+                padding-top: 1.6rem;
+                border-top: 1px solid rgba(13, 13, 14, 0.08);
+            }
+
+            &-value {
+                font-size: 1.8rem;
+            }
+
+            &--fw {
+                font-weight: 700;
+                font-size: 2rem;
+                margin-bottom: 3rem;
+
+                .checkout-sidebar__row-value {
+                    font-size: 2rem;
+                }
+            }
+
+            .table-product__column {
+                max-width: 18rem;
+                display: flex;
+                align-items: center;
+                padding-right: 0.5rem;
+            }
+
+            .table-product__body-title {
+                font-weight: normal;
+                font-size: 1.4rem;
+                line-height: 150%;
+                text-align: left;
+            }
+
+        }
+
+        &__radio {
+            margin-bottom: 1.6rem;
+        }
+
+        &__calculate {
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 110%;
+            color: #2A8BA3;
+            padding-bottom: 1.6rem;
+            border-bottom: 1px solid rgba(13, 13, 14, 0.08);
+            margin-bottom: 3.5rem;
+
+            a {
+                transition: opacity .5s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

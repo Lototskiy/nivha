@@ -9,6 +9,7 @@
         display: inline-block;
         margin-bottom: 1.6rem;
     }
+
     &__field,
     .select__field,
     .textarea__field {
@@ -33,6 +34,7 @@
         &-row {
             display: flex;
             justify-content: space-between;
+
             @media screen and (max-width:$large_tablet) {
                 flex-direction: column;
             }
@@ -44,20 +46,25 @@
 
         @media screen and (max-width:$large_tablet) {}
 
-        
+
         &-wrap {
             width: 100%;
             position: relative;
             overflow: hidden;
             display: flex;
-            
+
 
             &--50 {
                 width: calc(50% - 0.8rem);
+
                 @media screen and (max-width:$large_tablet) {
 
                     width: 100%;
                 }
+            }
+
+            &--25 {
+                width: calc(25% - 0.8rem);
             }
 
             .inputs__icon {
@@ -321,6 +328,19 @@
             }
         }
     }
+
+    &__icon {
+        position: absolute;
+        left: 0;
+        top: calc(50% + 10px);
+        transform: translateY(-50%);
+        width: 1.6rem;
+
+        svg {
+            fill: #404040;
+        }
+
+    }
 }
 
 header {
@@ -332,6 +352,7 @@ header {
             padding-right: 5.6rem;
             padding-left: 5.6rem;
         }
+
         &::before {
             content: '';
             position: absolute;

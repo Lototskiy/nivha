@@ -59,18 +59,20 @@
         // @media screen and (max-width:$large_tablet) {
         //     position: relative;
         // }
+        .swiper-slide {
+            opacity: 0.5;
+            transition: opacity .5s;
+        }
+
+        .swiper-slide-thumb-active {
+            opacity: 1;
+        }
 
         &-img {
             cursor: pointer;
             overflow: hidden;
             border-radius: 8px;
-            opacity: 0.5;
-            transition: opacity .5s;
             filter: drop-shadow(0px 1.21519px 6.22785px rgba(0, 0, 0, 0.08));
-
-            .swiper-slide-active & {
-                opacity: 1;
-            }
 
             &:hover {
                 img {
